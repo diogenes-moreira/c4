@@ -43,5 +43,8 @@ El rediseño responde al [post-mortem de la cohorte 3](fuente/post-mortem.md), d
 - **Nuevo:** recorrido completo de `create-implementation-plan` → grafo de tareas → `convert-tasks-to-linear`.
 - **Modular:** cinco módulos con entrada y salida propias.
 - **Fuera del deck:** persistencia, benchmarks, EBO y auto-mejora pasan a lecturas opcionales en `recursos.md`.
+- **Conexión con AIDLC:** una slide muestra cómo una unidad de AIDLC se convierte en una ola de tareas.
+
+También se incorporan los hallazgos de la [clase de C4](fuente/analisis-clase-c4.md): no hubo práctica en clase y el objetivo llegó tarde. El guion agrega reglas para proteger la práctica y preguntas frecuentes reales.
 
 Para el instructor: [guion y tiempos](fuente/guion.md).

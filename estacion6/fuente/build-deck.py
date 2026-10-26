@@ -127,7 +127,7 @@ slide("La ruta de hoy", [], "APERTURA", """
 <tr><td>4 · Del plan al grafo</td><td>33</td><td>Spec + design.md</td><td>Paquete de tareas y grafo en Linear</td></tr>
 <tr><td>5 · Loop y orquestador</td><td>7</td><td>Grafo publicado</td><td>Qué automatiza E7</td></tr>
 </table>
-<p class="take">Si un módulo se queda corto, su salida sigue siendo útil por sí sola.</p>""")
+<p class="take">Preguntas fuera del mapa van al estacionamiento: las respondemos al cierre.</p>""")
 
 # ---------------------------------------------------------------- Módulo 1
 slide("El modelo propone. El agente actúa.", ["LLM", "Coding agent"], "MÓDULO 1", """
@@ -135,7 +135,7 @@ slide("El modelo propone. El agente actúa.", ["LLM", "Coding agent"], "MÓDULO 
 <h1>El modelo propone. El agente actúa.</h1>
 <div class="two">
 <div><span class="num">LLM</span><h2>Predice la siguiente respuesta</h2><p>Recibe texto y devuelve texto. No ve tu repo ni puede ejecutar nada por su cuenta.</p><p class="example">Sirve para razonar, redactar y decidir el próximo paso.</p></div>
-<div><span class="num">Agente</span><h2>Un LLM con herramientas</h2><p>Puede leer archivos, editar, correr comandos y ver el resultado.</p><p class="example">Claude Code, Codex u OpenHands son coding agents.</p></div>
+<div><span class="num">Agente</span><h2>Un LLM con herramientas</h2><p>Puede leer archivos, editar, correr comandos y ver el resultado.</p><p class="example">Claude Code, Codex u OpenHands son coding agents. Casi cualquier modelo entra en casi cualquier arnés: revisa qué permite tu suscripción.</p></div>
 </div>
 <p class="take">El mismo modelo rinde distinto según lo que le damos alrededor.</p>""")
 
@@ -143,7 +143,7 @@ slide("Lo que rodea al agente", ["Arnés", "Loop"], "MÓDULO 1", """
 <p class="eyebrow">MÓDULO 1 · DEL LLM AL ORQUESTADOR</p>
 <h1>Lo que rodea al agente</h1>
 <div class="two">
-<div><span class="num">Arnés</span><h2>Contexto, permisos y hábitos</h2><p class="small">AGENTS.md y design.md dan contexto. Las skills enseñan procedimientos. Los hooks reaccionan a eventos. Los permisos limitan qué puede tocar.</p></div>
+<div><span class="num">Arnés</span><h2>Contexto, permisos y hábitos</h2><p class="small">AGENTS.md y design.md dan contexto. Las skills enseñan procedimientos. Los hooks reaccionan a eventos. Los permisos limitan qué puede tocar.</p><p class="example">Ingeniería de contexto: todo lo necesario y solo lo necesario.</p></div>
 <div><span class="num">Loop</span><h2>Intentar hasta un criterio</h2><p class="small">Planear → editar → probar → corregir. Termina cuando se cumple la aceptación, no cuando el agente deja de escribir.</p></div>
 </div>
 <p class="take">Sin criterio de aceptación, el loop no sabe cuándo parar. Por eso hoy trabajamos la spec.</p>""")
@@ -236,10 +236,21 @@ slide("Linear como cola de trabajo", ["MCP"], "MÓDULO 3", """
 <div class="on"><strong>blockedBy</strong><span>Las dependencias que forman el grafo.</span></div><i>→</i>
 <div><strong>area:</strong><span>Etiquetas que agrupan por componente.</span></div>
 </div>
-<p>Con el MCP de Linear, el agente lee y actualiza issues desde el arnés. La interfaz web también sirve.</p>
+<p>Con el MCP de Linear, el agente lee y actualiza issues desde el arnés. La interfaz web también sirve. ¿Usas Jira o ClickUp? Adapta la skill a tu tracker.</p>
 <p class="take">Publica en un proyecto sin orquestador observando: publicar puede disparar trabajo.</p>""")
 
 # ---------------------------------------------------------------- Módulo 4
+slide("De AIDLC a tareas", ["Arnés"], "MÓDULO 4", """
+<p class="eyebrow">MÓDULO 4 · DEL PLAN AL GRAFO</p>
+<h1>No es otro camino: es el paso siguiente a AIDLC</h1>
+<div class="chain">
+<div><strong>Inception</strong><span>Requisitos, historias y unidades de trabajo.</span></div><i>→</i>
+<div><strong>Construction</strong><span>Diseño funcional, NFR e infraestructura de cada unidad.</span></div><i>→</i>
+<div class="on"><strong>Ola de planificación</strong><span>Una unidad, o parte de ella, se planifica junta.</span></div><i>→</i>
+<div><strong>Tareas</strong><span>Con dependencias, aceptación y Definition of Ready.</span></div>
+</div>
+<p class="take">AIDLC define qué y cómo. El plan define en qué orden y cuándo está terminado.</p>""")
+
 slide("De la spec al paquete de tareas", ["Arnés"], "MÓDULO 4", """
 <p class="eyebrow">MÓDULO 4 · SKILL CREATE-IMPLEMENTATION-PLAN</p>
 <h1>De la spec al paquete de tareas</h1>

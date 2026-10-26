@@ -1,4 +1,23 @@
+---
+name: <nombre del producto>
+colors:
+  primary: "#______"
+  text: "#______"
+  background: "#______"
+typography:
+  heading: ______
+  body: ______
+spacing:
+  base: __px
+radius:
+  base: __px
+---
+
 # design.md
+
+El bloque de arriba (frontmatter) guarda los tokens de diseño en un formato que
+el agente puede leer y comparar. El resto del archivo explica el porqué. Es la
+misma idea de DESIGN.md que usan las skills de diseño del curso.
 
 Plantilla para el repositorio de tu proyecto. Cópiala como `design.md` en la
 raíz y complétala. El agente la lee antes de cualquier tarea que toque la
@@ -15,12 +34,8 @@ enlaza.
 
 ## 2. Sistema visual
 
-| Token | Valor | Uso |
-|---|---|---|
-| Color primario | `#______` | Acciones principales |
-| Color de texto | `#______` | Texto general |
-| Tipografía | ______ | Títulos y texto |
-| Espaciado base | __ px | Márgenes y separaciones |
+Explica cuándo se usa cada token del frontmatter. Ejemplo: «`primary` solo
+para la acción principal de cada pantalla».
 
 Si usas una librería de componentes, nómbrala con su versión.
 
