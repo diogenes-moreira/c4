@@ -16,14 +16,14 @@ La estación responde a una sola pregunta: **¿tu spec está lista para implemen
 
 | Reloj | Slides | Módulo | Qué hacer |
 |---|---|---|---|
-| 0–8 | 1–3 | Apertura | Mostrar la salida de hoy. Recorrer el mapa completo (slide 2) y la ruta por módulos (slide 3). |
-| 8–25 | 4–6 | 1 · Del LLM al orquestador | Dos piezas por slide, 3 min cada una. Cerrar con el ejercicio de 5 min: cada uno ubica su herramienta en el mapa y dice qué pieza le falta. |
-| 25–50 | 7–10 | 2 · Evaluar la spec | 2 min contraste ambigua/preparada. 3 min las tres lentes. 3 min la nota ABCD. 17 min de práctica con `evaluate-spec`. |
-| 50–55 | 11 | Pausa | Al volver, preguntar qué nota sacaron dos o tres personas. |
-| 55–72 | 12–14 | 3 · design.md + Linear | 5 min fuentes de verdad. 5 min design.md con la plantilla abierta. 5 min Linear vía MCP. 2 min de preguntas. |
-| 72–105 | 15–19 | 4 · Del plan al grafo | 2 min de AIDLC a tareas. 2 min la skill. 2 min el grafo: qué tareas están listas. 2 min publicación con dry-run. 25 min de práctica en parejas. |
-| 105–112 | 20 | 5 · Loop y orquestador | Recorrer el ciclo de una tarea. Aclarar qué se hace a mano en E7 y qué automatiza el orquestador. |
-| 112–120 | 21–22 | Cierre | Responder el estacionamiento, checklist de preparación de E7 y dónde están las skills. |
+| 0–8 | 1–4 | Apertura | Mostrar la salida de hoy. Presentarse en 2 minutos (slide 2). Recorrer el mapa completo (slide 3) y la ruta por módulos (slide 4). |
+| 8–25 | 5–7 | 1 · Del LLM al orquestador | Dos piezas por slide, 3 min cada una. Cerrar con el ejercicio de 5 min: cada uno ubica su herramienta en el mapa y dice qué pieza le falta. |
+| 25–50 | 8–11 | 2 · Evaluar la spec | 2 min contraste ambigua/preparada. 3 min las tres lentes. 3 min la nota ABCD. 17 min de práctica con `evaluate-spec`. |
+| 50–55 | 12 | Pausa | Al volver, preguntar qué nota sacaron dos o tres personas. |
+| 55–72 | 13–15 | 3 · design.md + Linear | 5 min fuentes de verdad. 5 min design.md con la plantilla abierta. 5 min Linear vía MCP. 2 min de preguntas. |
+| 72–105 | 16–20 | 4 · Del plan al grafo | 2 min de AIDLC a tareas. 2 min la skill. 2 min el grafo: qué tareas están listas. 2 min publicación con dry-run. 25 min de práctica en parejas. |
+| 105–112 | 21 | 5 · Loop y orquestador | Recorrer el ciclo de una tarea. Aclarar qué se hace a mano en E7 y qué automatiza el orquestador. |
+| 112–120 | 22–23 | Cierre | Responder el estacionamiento, checklist de preparación de E7 y dónde están las skills. |
 
 En caso de retraso, proteger los dos bloques de práctica (módulos 2 y 4). El módulo 1 se puede dar en 10 minutos y el 5 en 3.
 
@@ -62,7 +62,7 @@ Si falta acceso a Linear, se entrega el paquete validado y se registra «publica
 
 Son preguntas que hicieron participantes de C4.
 
-- **¿Esto reemplaza AIDLC?** No. AIDLC deja la spec y el diseño de cada unidad; aquí cada unidad se convierte en una ola de tareas (slide 15).
+- **¿Esto reemplaza AIDLC?** No. AIDLC deja la spec y el diseño de cada unidad; aquí cada unidad se convierte en una ola de tareas (slide 16).
 - **¿Es obligatorio usar Linear?** No. Es lo recomendado por su API y su capa gratuita. Con Jira o ClickUp, se pide al agente una skill equivalente a `convert-tasks-to-linear` para ese tracker.
 - **¿Puedo usar cualquier modelo con cualquier arnés?** Casi siempre sí, pero los planes de suscripción limitan con qué arnés se pueden usar. Revisar los términos de cada proveedor.
 - **En un proyecto grande, ¿qué hago con los archivos de tareas viejas?** Antes de borrarlos o archivarlos, extraer lo que sirve para la documentación o la memoria del proyecto. Conviene conservar la ola anterior como referencia.

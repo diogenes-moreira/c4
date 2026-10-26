@@ -69,6 +69,11 @@ code{font-size:20px;color:white}
 .cover h1{font-size:60px;max-width:1000px}
 .cover .lead{font-size:28px;max-width:950px;color:#E6E6E6}
 .big{font-size:30px;line-height:1.3;color:white}
+.bio{display:grid;grid-template-columns:380px 1fr;gap:56px;align-items:start;margin-top:4px}
+.bio img{width:380px;height:500px;object-fit:cover;object-position:50% 30%;border-radius:4px}
+.bio .rows>div{border-top:1px solid #2A2A2A;padding:12px 0}
+.bio .rows strong{display:block;color:white;font-size:22px}
+.bio .rows span{display:block;color:#B3B3B3;font-size:18px;line-height:1.3;margin-top:4px}
 .slide:focus{outline:2px solid var(--lime)}
 @media print{@page{size:1280px 720px;margin:0}body{background:#0A0A0A}.deck{display:block;padding:0}
 .slide{margin:0;break-after:page}.slide:last-child{break-after:auto}.slide:focus{outline:none}}
@@ -100,6 +105,22 @@ slide("Del spec al harness", [], "APERTURA", """
 <h1>¿Tu spec está lista para implementar?</h1>
 <p class="lead">Hoy evaluamos la spec, la convertimos en un grafo de tareas y la dejamos en Linear, lista para que un agente la ejecute en la estación 7.</p>
 <p class="take">Salida de hoy: spec con nota A o B · design.md · paquete de tareas · grafo publicado o listo para publicar.</p>
+</div>""")
+
+slide("Quién les habla", [], "APERTURA", """
+<div class="bio">
+<img src="assets/presentador.webp" alt="Foto de Diógenes Moreira">
+<div>
+<p class="eyebrow">QUIÉN LES HABLA</p>
+<h1 style="margin-bottom:6px">Diógenes Moreira</h1>
+<p class="example" style="margin-bottom:12px">CTO de 30X</p>
+<div class="rows">
+<div><strong>5 años en Frubana, de VP of Engineering a CTO</strong><span>El equipo de tecnología pasó de 10 a casi 100 personas, organizado por verticales.</span></div>
+<div><strong>8 años de tecnología en el sector público</strong><span>Ministerio Público Fiscal y fundador de la Unidad de Ciberdelincuencia (UFECI).</span></div>
+<div><strong>Fractional CTO y advisor</strong><span>rintin, Masu, ONA Report y Atina.app. Docente de posgrado en la UBA.</span></div>
+<div><strong>Autor</strong><span>Arquitectura para Vibe-Coders, Vibe Coding para Desarrolladores y El martes que no estás.</span></div>
+</div>
+</div>
 </div>""")
 
 slide("El mapa de la estación", MAP, "APERTURA", """
