@@ -37,6 +37,22 @@ Pide o localiza, sin inventar rutas:
 
 Si falta un artefacto, regístralo como vacío. No lo reconstruyas de memoria.
 
+## Unidad de evaluación: la ola
+
+No evalúes el proyecto entero con una sola nota. Divide el alcance en olas de
+planificación (por ejemplo, una unidad de AIDLC o un grupo de unidades) y pon
+una nota a cada una. Es habitual que una unidad tenga diseño completo y las
+demás solo Inception: una nota global escondería esa diferencia.
+
+## Cómo leer una spec grande
+
+1. Empieza por los índices: estado del proceso (`aidlc-state.md` o similar),
+   requisitos, unidades de trabajo y mapa de historias.
+2. Para cada criterio, busca la sección que lo responde (por títulos o por
+   búsqueda de texto) y léela. No leas todos los archivos de punta a punta.
+3. Cita ruta y sección o línea. Si no encuentras evidencia, el criterio no se
+   cumple.
+
 ## Las tres lentes
 
 Evalúa cada criterio como **Cumple**, **Parcial** o **Falta**, citando la
@@ -72,7 +88,21 @@ críticos.
 | D3 design.md | Sistema visual, componentes y patrones para las tareas de interfaz. Si el producto no tiene interfaz, N/A. |
 | D4 Restricciones | Requisitos no funcionales: seguridad, datos personales, rendimiento, despliegue. |
 
-## Nota global
+### 4. Coherencia entre artefactos
+
+No lleva nota propia, pero se reporta siempre:
+
+- Contradicciones entre documentos (una decisión distinta en el PRD y en los
+  requisitos, fechas imposibles, decisiones marcadas como pendientes que ya
+  se tomaron en otro archivo).
+- Estado del proceso desactualizado respecto de los artefactos que existen.
+- Dependencias técnicas que hay que **verificar**: un servicio, API o librería
+  que la spec da por hecha. Si no estás seguro de que exista o funcione así,
+  márcalo «verificar» con el motivo. No afirmes que existe ni que no existe
+  sin una fuente.
+- Rutas o referencias que apuntan fuera del repo.
+
+## Nota por ola
 
 | Nota | Significado | Siguiente paso |
 |---|---|---|
@@ -81,17 +111,27 @@ críticos.
 | **C** | Necesita decisiones. Falta al menos un crítico, pero el alcance existe. | Resolver los vacíos críticos antes de planificar. |
 | **D** | Todavía no es una spec. Falta el alcance o no hay requisitos verificables. | Volver a la definición (estaciones 2, 4 y 5). |
 
-Solo una spec con nota **A** o **B** pasa a planificación.
+**Parcial en un crítico:** cuenta como B solo si el vacío se cierra con un
+supuesto escrito (por ejemplo, «la longitud se mide en caracteres Unicode»).
+Si cerrarlo exige trabajo de diseño (reglas de negocio que no existen, un
+proveedor sin elegir), cuenta como **Falta**.
+
+Solo una ola con nota **A** o **B** pasa a planificación.
 
 ## Salida
 
 Escribe `docs/spec-review.md` con:
 
-1. Nota global y una frase que la justifique.
-2. Tabla por lente: criterio, estado, evidencia (ruta y sección), corrección mínima.
-3. Los tres vacíos más graves, ordenados por impacto en la implementación.
-4. Supuestos propuestos para los parciales, marcados como **pendientes de
+1. Tabla de olas con su nota y una frase que la justifique.
+2. Recomendación: qué ola planificar primero y qué olas vuelven a diseño.
+3. Tabla por lente: criterio, estado, evidencia (ruta y sección), corrección
+   mínima. Si un criterio cambia según la ola, dilo en la misma fila.
+4. Hallazgos de coherencia entre artefactos.
+5. Los tres vacíos más graves, ordenados por impacto en la implementación.
+6. Supuestos propuestos para los parciales, marcados como **pendientes de
    aprobación**.
+
+Ejemplo completo: `estacion6/ejemplos/spec-review-entrevista-ai.md`.
 
 ## Reglas
 
@@ -99,4 +139,5 @@ Escribe `docs/spec-review.md` con:
 - No apruebes un criterio sin evidencia citada.
 - No inventes requisitos, comandos ni decisiones. Si algo no está, es un vacío.
 - No conviertas TDD en obligación si el equipo no lo declaró.
-- Si la spec es grande, evalúa primero el alcance de esta ronda.
+- Una nota por ola, nunca una sola nota para un proyecto con unidades en
+  distinto estado.

@@ -56,7 +56,7 @@ Empieza con el prompt de generación completa de la preparación E7. Los siguien
 ```text
 Lee y sigue estacion6/skills/evaluate-spec/SKILL.md.
 Evalúa la spec de mi proyecto: <rutas a PRD, Inception, Construction y design.md>.
-Escribe docs/spec-review.md con la nota A–D, la tabla por lente y los tres
+Escribe docs/spec-review.md con una nota A–D por ola, la tabla por lente y los tres
 vacíos más graves. Cita ruta y sección para cada criterio.
 Mi equipo <sí / no> declaró TDD. No modifiques la spec.
 ```

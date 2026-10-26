@@ -186,7 +186,7 @@ slide("La nota define el siguiente paso", ["Arnés"], "MÓDULO 2", """
 <div><b>C</b><strong>Necesita decisiones</strong><span>Falta al menos un crítico. Resolver antes de planificar.</span></div>
 <div><b>D</b><strong>Todavía no es spec</strong><span>Sin alcance o sin requisitos verificables. Volver a E4 y E5.</span></div>
 </div>
-<p class="take">Solo A o B pasan al módulo 4. TDD se exige si tu equipo lo declaró.</p>""")
+<p class="take">Una nota por ola, no por proyecto. Solo A o B pasan al módulo 4.</p>""")
 
 slide("Evalúa tu spec", ["Arnés"], "MÓDULO 2", """
 <p class="eyebrow">TU TURNO · 17 MIN</p>

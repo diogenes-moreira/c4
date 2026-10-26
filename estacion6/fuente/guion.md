@@ -42,6 +42,7 @@ Salen de la clase de C4 ([análisis](analisis-clase-c4.md)), donde no hubo prác
 2. La skill escribe `docs/spec-review.md` con la nota y los vacíos citados.
 3. Corrigen el vacío más grave y vuelven a evaluar. Interesa el cambio de nota, no llegar a A.
 4. Si la spec queda en C o D, el participante sigue con EntreVista AI en el módulo 4 y registra su propio pendiente.
+5. Para mostrar cómo se ve una salida real, abrir `../ejemplos/spec-review-entrevista-ai.md`: auth-lambda saca B y el resto del MVP C, porque solo esa unidad tiene diseño funcional. Sirve para explicar por qué la nota va por ola.
 
 Sobre ABCD: la rúbrica no estaba definida en el post-mortem. Esta versión la concreta: A lista, B lista con supuestos aceptados, C faltan criterios críticos, D todavía no es spec. TDD se exige solo si el equipo lo declaró.
 

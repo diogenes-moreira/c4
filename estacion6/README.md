@@ -12,6 +12,7 @@ Todo el recorrido usa un mapa fijo que aparece arriba en cada slide, con la piez
 - [Presentación HTML editable](estacion6.html). Se genera con [`fuente/build-deck.py`](fuente/build-deck.py).
 - [Skill evaluate-spec](skills/evaluate-spec/SKILL.md): evalúa la spec con tres lentes (producto, TDD y diseño) y le pone una nota de A a D.
 - [Skill create-implementation-plan](skills/create-implementation-plan/SKILL.md): copia de la skill de OpenSymphony que genera el paquete de tareas.
+- [Ejemplo de spec review](ejemplos/spec-review-entrevista-ai.md): la skill aplicada a EntreVista AI. Una ola con nota B y el resto con C.
 - [Plantilla design.md](plantillas/design.md): lo que el agente debe saber sobre cómo se ve y cómo se construye tu producto.
 - [Ejemplo trabajado y prompts](ejemplo-y-prompts.md).
 - [Recursos y lecturas](recursos.md).
