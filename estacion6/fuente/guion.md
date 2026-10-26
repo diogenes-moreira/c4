@@ -1,75 +1,63 @@
-# Guion de clase y fuentes
+# Guion de clase
 
-Preparado para C4, 10 de septiembre de 2026. Presentación canónica: `../estacion6.html`; exportación para enseñar: `../estacion6.pdf`. Los tiempos son una propuesta docente. La urgencia de «menos de 20 minutos» se interpreta como plazo de preparación, no duración de la clase; el calendario de C4 reserva 7–9 PM.
+Presentación: `../estacion6.html`, generada con `build-deck.py`; exportación para enseñar: `../estacion6.pdf`. Duración: 120 minutos.
 
 ## Decisión pedagógica
 
-Un solo ejemplo, EntreVista AI, conecta lo que ya se diseñó en estación 5 con un plan completo de implementación. El ejemplo de una tarea ilustra el formato; la entrega cubre todas las tareas del alcance definido. Los conceptos nuevos explican decisiones que el alumno toma en ese recorrido. No abrir tours por varias herramientas. La demostración de OpenSymphony y la implementación quedan para E7. El flujo manual es una propuesta didáctica; no se presenta como el acuerdo de usar la skill Dispatch, que fue objetada en la reunión.
+La estación responde a una sola pregunta: **¿tu spec está lista para implementar?** Todo lo demás sirve para contestarla y para dejar el trabajo en Linear.
+
+- Un mapa fijo (LLM → Coding agent → Arnés → Loop → Orquestador → MCP) aparece arriba en cada slide. Antes de cada bloque, señalar qué pieza está resaltada y por qué.
+- Cinco módulos con entrada y salida propias. Si un módulo se atrasa, se cierra con su salida y se pasa al siguiente.
+- Un solo ejemplo, EntreVista AI, desde la evaluación de la spec hasta el grafo.
+- La ejecución y la orquestación quedan para E7. Aquí solo se muestra qué van a automatizar.
+- No se usa la skill Dispatch de OpenSymphony (fue objetada en el post-mortem).
 
 ## Guion de 120 minutos
 
-| Reloj | Slides | Qué hacer y preguntar |
+| Reloj | Slides | Módulo | Qué hacer |
+|---|---|---|---|
+| 0–8 | 1–3 | Apertura | Mostrar la salida de hoy. Recorrer el mapa completo (slide 2) y la ruta por módulos (slide 3). |
+| 8–25 | 4–6 | 1 · Del LLM al orquestador | Dos piezas por slide, 3 min cada una. Cerrar con el ejercicio de 5 min: cada uno ubica su herramienta en el mapa y dice qué pieza le falta. |
+| 25–50 | 7–10 | 2 · Evaluar la spec | 2 min contraste ambigua/preparada. 3 min las tres lentes. 3 min la nota ABCD. 17 min de práctica con `evaluate-spec`. |
+| 50–55 | 11 | Pausa | Al volver, preguntar qué nota sacaron dos o tres personas. |
+| 55–72 | 12–14 | 3 · design.md + Linear | 5 min fuentes de verdad. 5 min design.md con la plantilla abierta. 5 min Linear vía MCP. 2 min de preguntas. |
+| 72–105 | 15–18 | 4 · Del plan al grafo | 3 min la skill. 3 min el grafo: qué tareas están listas. 2 min publicación con dry-run. 25 min de práctica en parejas. |
+| 105–112 | 19 | 5 · Loop y orquestador | Recorrer el ciclo de una tarea. Aclarar qué se hace a mano en E7 y qué automatiza el orquestador. |
+| 112–120 | 20–21 | Cierre | Checklist de preparación de E7, dónde están las skills y preguntas. |
+
+En caso de retraso, proteger los dos bloques de práctica (módulos 2 y 4). El módulo 1 se puede dar en 10 minutos y el 5 en 3.
+
+## Módulo 2: cómo conducir la evaluación
+
+1. Cada participante abre su repo y le pide al arnés que lea y siga `skills/evaluate-spec/SKILL.md` (prompt en `../ejemplo-y-prompts.md`).
+2. La skill escribe `docs/spec-review.md` con la nota y los vacíos citados.
+3. Corrigen el vacío más grave y vuelven a evaluar. Interesa el cambio de nota, no llegar a A.
+4. Si la spec queda en C o D, el participante sigue con EntreVista AI en el módulo 4 y registra su propio pendiente.
+
+Sobre ABCD: la rúbrica no estaba definida en el post-mortem. Esta versión la concreta: A lista, B lista con supuestos aceptados, C faltan criterios críticos, D todavía no es spec. TDD se exige solo si el equipo lo declaró.
+
+## Módulo 3: design.md y fuentes de verdad
+
+- La spec dice qué; `design.md` dice cómo se ve y cómo se construye; los archivos de tarea son el contrato; Linear lleva el estado; el PR y los tests son la evidencia.
+- No hay sincronización automática entre archivos de tarea e issues. Si cambia un contrato, se actualizan los dos.
+- Publicar en un proyecto observado por un orquestador puede disparar trabajo. Usar un proyecto de preparación.
+
+## Módulo 4: práctica en parejas
+
+12 min para generar el paquete con `create-implementation-plan`; 7 min de revisión cruzada (cobertura, ciclos, tareas listas); 6 min de dry-run con `convert-tasks-to-linear` o carga manual de las primeras tareas. El paquete completo se termina como preparación de E7.
+
+Si falta acceso a Linear, se entrega el paquete validado y se registra «publicación pendiente».
+
+## Fuentes
+
+| Tema | Fuente | Uso |
 |---|---|---|
-| 0–5 | 1–2 | Mostrar resultado esperado. Preguntar qué falta en «implementa autenticación». Recoger dos respuestas. |
-| 5–11 | 3–4 | Explicar alcance/contexto/ejecución y modelo/arnés. Pedir que ubiquen su herramienta en el mapa. |
-| 11–18 | 5 | Explicar skill/contexto/MCP/hook durante 3 min. Dar 4 min para clasificar ejemplos; conectar Impeccable con DESIGN.md. |
-| 18–25 | 6–8 | Ejemplo trabajado: regla y alcance (2 min), criterios de aceptación (2), mapeo a Linear (2), una pregunta de comprobación (1). |
-| 25–55 | 9 | Plan completo: 5 min reunir specs; 13 generar con create-implementation-plan; 8 revisar cobertura y dependencias; 4 corregir y registrar bloqueos. |
-| 55–60 | 9 | Pausa. |
-| 60–66 | 10–11 | Explicar continuidad (3 min); leer el gráfico y preguntar qué permite concluir (3). |
-| 66–75 | 12 | Explicar hooks (3 min); cada pareja propone evento, acción y evidencia, y detecta qué NO garantiza (6). |
-| 75–81 | 13 | Diseñar comparación A/B: explicación 2 min; alumnos identifican variables y una conclusión inválida 4 min. |
-| 81–86 | 14 | EBO: explicar captura/evaluación 2 min; interpretar tres observaciones 3 min. Sin instalación. |
-| 86–90 | 15 | Auto-mejora de modelo frente a arnés (3 min); preguntar qué evidencia exigirían antes de aceptar un cambio (1). |
-| 90–108 | 16–17 | Puente a E7 (3 min); revisión cruzada del paquete y corrección (15). |
-| 108–118 | 18 | Abrir preparación E7, probar accesos disponibles, recoger bloqueos/preguntas. |
-| 118–120 | 19 | Mostrar dónde están las skills y las lecturas; cerrar con `recursos.md`. |
+| Rediseño | `post-mortem.md` | Requisitos de la cohorte 3 |
+| Plan de tareas | `../skills/create-implementation-plan/SKILL.md` | Contrato del paquete |
+| Publicación | [convert-tasks-to-linear](https://github.com/kumanday/OpenSymphony/tree/main/.agents/skills/convert-tasks-to-linear) | Validación, dry-run y publicación |
+| MCP | [Model Context Protocol](https://modelcontextprotocol.io) | Definición del protocolo |
+| Orquestación | [OpenSymphony](https://github.com/kumanday/OpenSymphony) | Demo de E7 |
 
-No hablar durante todos los minutos de un bloque. Las preguntas y trabajo de los estudiantes forman parte del tiempo. En caso de retraso, mantener práctica y tarea previa; recorrer EBO y auto-mejora en 3 minutos y dejar sus fuentes para lectura.
+## Regeneración
 
-## Ejemplo trabajado: 7 minutos
-
-Este bloque explica las slides 6–8 con el caso ya escrito en `../ejemplo-y-prompts.md`. No requiere ejecutar un agente ni publicar un ticket en vivo.
-
-1. **Slide 6, 2 min:** señalar las reglas BR-PASS-01 a 04 y acotar el cambio a validador y pruebas. Preguntar qué queda fuera. Mostrar los pendientes de Unicode, módulo y runner: AUTH-01 sigue como borrador hasta resolverlos.
-2. **Slide 7, 2 min:** recorrer un caso válido, uno de error y la cadena vacía. Relacionar cada entrada con la regla que comprueba. Explicar que el comando real de validación debe identificarse en el repo.
-3. **Slide 8, 2 min:** explicar el mapeo: spec para reglas, manifest para inventario completo y archivos de tareas para contratos, Linear para estado y dependencias, PR/tests para evidencia. Si cambia el contrato, hay que alinear archivos de tareas e issues; no hay sincronización automática. La tabla ilustra el mapeo, no un ticket publicado.
-4. **Cierre, 1 min:** preguntar «¿Qué falta para que esta tarea esté lista?» y recoger una respuesta concreta. Pasar a la práctica de la slide 9.
-
-## Práctica en parejas: 30 minutos
-
-5 min para reunir los artefactos del proyecto y confirmar todo el alcance; 13 para generar el paquete con la skill `../skills/create-implementation-plan/SKILL.md`; 8 para revisar cobertura y dependencias en pareja; 4 para corregir y registrar bloqueos. Usar el prompt completo de `../../estacion7/preparacion.md`. Los 30 minutos inician el plan; completarlo y revisarlo es la tarea previa de E7. No limitar la entrega al validador ni a una feature.
-
-El paquete debe incluir `task-package.yaml`, `milestones.md` y un archivo por tarea conforme al contrato de la skill. La tabla `cobertura.md` vincula cada requisito con tareas o evidencia existente. Revisar IDs, archivos, milestones, referencias y ausencia de ciclos. No confundir paquete completo con todas las tareas desbloqueadas: identificar cuáles pueden ejecutarse primero. Si falta el spec propio, usar los artefactos disponibles de EntreVista AI y registrar el diseño pendiente del resto del alcance.
-
-La skill está incluida como copia de la de OpenSymphony, sin modificaciones. El alumno puede pedir al arnés que lea y siga el archivo; no requiere instalar el orquestador. La publicación en Linear es un paso separado, posterior a revisión y dry-run si usa `convert-tasks-to-linear`. Si falla el acceso, conservar el paquete completo y registrar publicación pendiente.
-
-## Notas para explicar la teoría con precisión
-
-- Persistencia del razonamiento: capacidad del arnés/API para conservar estado entre interacciones; no pedir al alumno revelar razonamiento privado. Una nota humana de decisiones y pendientes ayuda al handoff, pero no reproduce esa capacidad interna.
-- Compaction conserva una representación útil del historial para continuar con un contexto limitado; no es memoria perfecta. Evitar afirmar que todos los arneses preservan lo mismo.
-- Experimento OpenAI: comparar exclusivamente 13,3% y 38,3% RHAE del conjunto público, GPT-5.6 Sol. No mezclar con el 7,8% de otra cifra del artículo. Cambiaron razonamiento retenido y compaction; el artículo también señala diferencia en unidades de ventana. Es evidencia sobre una configuración, no un aislamiento causal perfecto ni una mejora universal en código.
-- Hook: reacción configurada a un evento. La semántica de bloqueo depende del evento y del arnés. Un hook pasivo no evita un merge; CI y revisión son controles distintos.
-- EBO: distinguir ejecución completada, calidad de captura y calidad del trabajo. Un juicio debe enlazar evidencia; una captura incompleta limita lo que podemos concluir. No mostrar datos sintéticos como corrida real.
-- Auto-mejora recursiva: un sistema participa en modificar componentes que usa en iteraciones posteriores. En modelos, el cambio de pesos requiere un proceso de entrenamiento; un chat no los modifica por escribir una memoria. En arneses, pueden cambiar instrucciones, skills o implementación manteniendo el modelo. Prime Agent y exo ilustran mecanismos, no una demostración de mejora ilimitada.
-- Subagentes: dividir trabajo con límites claros y contexto propio puede ayudar. Ejemplo: uno revisa criterios mientras otro investiga convenciones. No dividir dos ediciones del mismo módulo sin coordinación. La revisión independiente necesita criterio y evidencia, no solo otra respuesta afirmativa.
-
-## Fuentes verificadas para esta edición
-
-| Tema | Fuente primaria | Uso |
-|---|---|---|
-| Persistencia y benchmark | [OpenAI, 29 julio 2026](https://openai.com/index/how-two-settings-tripled-our-arc-agi-3-scores/) | Gráfico y alcance del experimento |
-| Hooks | [Claude Code: hooks](https://code.claude.com/docs/en/hooks-guide) | Eventos y acciones; semántica dependiente del hook |
-| Telemetría y evaluación | [Engineering Behavior Observatory](https://github.com/trilogy-group/engineering-behavior-observatory) | Captura de trayectoria/workspace y evaluación vinculada a evidencia |
-| Arnés que se adapta | [Prime Agent](https://github.com/PrimeIntellect-ai/prime-agent) | Estado suplementario durable y refinamiento con historial |
-| Agente modificable | [exoharness](https://exoharness.ai/) | Separación de estado durable y lógica del agente |
-| Orquestación | [Symphony](https://github.com/openai/symphony), [OpenSymphony](https://github.com/kumanday/OpenSymphony) | Referencia y herramienta de demostración |
-| Instalación | [Claude Code quickstart](https://code.claude.com/docs/en/quickstart), [Git](https://git-scm.com/install/) | Preparación de herramientas |
-
-La lista distribuible y actualizable está en `../recursos.md`. La slide 19 funciona como índice proyectado; no reemplaza los enlaces del archivo.
-
-## Organización y regeneración
-
-El HTML de estación 6 es la fuente editable; su PDF es el material de presentación. `../ejemplo-y-prompts.md` contiene el caso de trabajo. `../../estacion7/preparacion.md` es la fuente del material previo; su PDF es la copia distribuible. El análisis del post-mortem y las capturas de verificación son internos, dentro de `fuente/`.
-
-Para editar el deck, modificar HTML o su texto editable en navegador y volver a exportar. Se usa impresión Chromium, tamaño 1280 × 720, fondos habilitados, sin encabezados. No hay servidor ni dependencias remotas para abrirlo. La guía de preparación usa formato A4.
+Editar `build-deck.py`, ejecutar `python3 build-deck.py` y exportar el PDF con impresión Chromium a 1280 × 720, fondos habilitados y sin encabezados. Las capturas de `verificacion/` corresponden a esta versión.

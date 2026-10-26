@@ -51,6 +51,31 @@ Este fragmento no cubre toda autenticación ni todo EntreVista AI. Genera el paq
 
 Empieza con el prompt de generación completa de la preparación E7. Los siguientes sirven para inspeccionar y mejorar tareas individuales dentro del paquete. La skill genera `task-package.yaml`, `milestones.md` y un archivo por tarea. Añade `cobertura.md` para comprobar que todos los requisitos están representados.
 
+### Evaluar la spec (módulo 2)
+
+```text
+Lee y sigue estacion6/skills/evaluate-spec/SKILL.md.
+Evalúa la spec de mi proyecto: <rutas a PRD, Inception, Construction y design.md>.
+Escribe docs/spec-review.md con la nota A–D, la tabla por lente y los tres
+vacíos más graves. Cita ruta y sección para cada criterio.
+Mi equipo <sí / no> declaró TDD. No modifiques la spec.
+```
+
+Después de corregir el vacío más grave:
+
+```text
+Vuelve a evaluar solo los criterios que cambiaron. Actualiza la nota en
+docs/spec-review.md e indica qué la hizo subir o por qué sigue igual.
+```
+
+### Crear design.md (módulo 3)
+
+```text
+Copia estacion6/plantillas/design.md a la raíz de mi repo como design.md.
+Complétalo solo con lo que ya está decidido en mi spec, mi código y mis
+artefactos de E5. Deja «pendiente» lo que no esté decidido; no inventes.
+```
+
 ### Leer y detectar vacíos
 
 ```text

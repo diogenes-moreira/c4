@@ -1,31 +1,47 @@
 # Estación 6: Del spec al harness
 
-Convierte el alcance definido de tu producto en un plan completo de tareas usando `create-implementation-plan`. Usaremos EntreVista AI, el ejemplo de estación 5, y después tu proyecto.
+Lleva tu especificación a un estado **listo para implementar**: primero la evalúas, después la conviertes en un grafo de tareas y lo dejas en Linear. En la estación 7 un agente lo ejecuta.
+
+Todo el recorrido usa un mapa fijo que aparece arriba en cada slide, con la pieza actual resaltada:
+
+**LLM → Coding agent → Arnés → Loop → Orquestador → MCP**
 
 ## Material de clase
 
 - [Presentación PDF](estacion6.pdf).
-- [Presentación HTML editable](estacion6.html).
+- [Presentación HTML editable](estacion6.html). Se genera con [`fuente/build-deck.py`](fuente/build-deck.py).
+- [Skill evaluate-spec](skills/evaluate-spec/SKILL.md): evalúa la spec con tres lentes (producto, TDD y diseño) y le pone una nota de A a D.
+- [Skill create-implementation-plan](skills/create-implementation-plan/SKILL.md): copia de la skill de OpenSymphony que genera el paquete de tareas.
+- [Plantilla design.md](plantillas/design.md): lo que el agente debe saber sobre cómo se ve y cómo se construye tu producto.
 - [Ejemplo trabajado y prompts](ejemplo-y-prompts.md).
-- [Skill create-implementation-plan](skills/create-implementation-plan/SKILL.md): copia de la skill de OpenSymphony para generar el paquete completo.
-- [Recursos y lecturas](recursos.md): herramientas, skills y artículos de referencia para estaciones 6 y 7.
-- [Preparación para estación 7](../estacion7/preparacion.md): 75–105 minutos orientativos antes del martes 15 de septiembre.
-- [Preparación en PDF](../estacion7/preparacion.pdf).
+- [Recursos y lecturas](recursos.md).
+- [Preparación para estación 7](../estacion7/preparacion.md).
 
-La sesión alterna explicación, ejemplo trabajado y trabajo en tu repositorio. Inicias el paquete completo de tareas, con milestones, dependencias, criterios de aceptación y cobertura de requisitos; lo completas antes de E7. Si todavía no tienes tu diseño, trabaja con el ejemplo incluido.
+## Cinco módulos
 
-## Ruta de la sesión (120 minutos)
+La clase está dividida en módulos que se sostienen solos: cada uno entra con un artefacto y sale con otro. Si uno se acorta, su salida sigue sirviendo.
 
-| Minutos | Actividad | Resultado |
-|---|---|---|
-| 0–5 | Ver una tarea lista y otra ambigua | Reconocer la diferencia |
-| 5–18 | Alcance, contexto, ejecución; modelo y arnés | Un mapa común |
-| 18–25 | Ejemplo trabajado: del spec a una tarea (slides 6–8) | Entender alcance, pruebas y mapeo a Linear |
-| 25–55 | Generación del plan con la skill y revisión en parejas | Paquete de tareas y vacíos identificados |
-| 55–60 | Pausa | |
-| 60–75 | Persistencia, hooks y evidencia | Cómo evitar repetir errores |
-| 75–90 | Benchmarks, EBO y auto-mejora | Cómo evaluar un cambio del sistema |
-| 90–108 | Revisión cruzada de cobertura y dependencias | Plan revisado |
-| 108–120 | Preparación E7 y preguntas | Accesos y siguiente paso claros |
+| Módulo | Min | Entra | Sale | Pieza del mapa |
+|---|---|---|---|---|
+| Apertura | 8 | | El mapa y la ruta | Todo el mapa |
+| 1 · Del LLM al orquestador | 17 | Tu herramienta actual | Tu herramienta ubicada en el mapa | Todo el mapa |
+| 2 · Evaluar la spec | 25 | Tu spec de E4 y E5 | `docs/spec-review.md` con nota A–D | Arnés (skill) |
+| Pausa | 5 | | | |
+| 3 · design.md + Linear | 17 | Spec con nota A o B | `design.md` y fuentes de verdad claras | Arnés, MCP |
+| 4 · Del plan al grafo | 33 | Spec + `design.md` | Paquete de tareas y grafo en Linear | Arnés, Orquestador, MCP |
+| 5 · Loop y orquestador | 7 | Grafo publicado | Qué automatiza E7 | Loop, Orquestador |
+| Cierre | 8 | | Preparación de E7 clara | |
 
-Para el instructor: [guion, tiempos y fuentes](fuente/guion.md). El análisis interno del post-mortem está en [fuente/post-mortem.md](fuente/post-mortem.md). `fuente/` contiene apoyo de edición, investigación y verificación; los PDF enlazados arriba son los materiales finales.
+## Qué cambió respecto de la versión anterior
+
+El rediseño responde al [post-mortem de la cohorte 3](fuente/post-mortem.md), donde esta estación tuvo la nota más baja:
+
+- **Reencuadre:** la estación conecta la spec con el estado listo para implementar.
+- **Nuevo:** skill `evaluate-spec` con nota ABCD y lentes de producto, TDD y diseño.
+- **Nuevo:** mapa conceptual persistente «estás aquí» en todas las slides.
+- **Nuevo:** `design.md` y Linear como fuentes de verdad explícitas.
+- **Nuevo:** recorrido completo de `create-implementation-plan` → grafo de tareas → `convert-tasks-to-linear`.
+- **Modular:** cinco módulos con entrada y salida propias.
+- **Fuera del deck:** persistencia, benchmarks, EBO y auto-mejora pasan a lecturas opcionales en `recursos.md`.
+
+Para el instructor: [guion y tiempos](fuente/guion.md).

@@ -12,7 +12,7 @@ miércoles de 7 a 8pm**.
 
 | Carpeta | Qué es |
 |---|---|
-| [`estacion6`](./estacion6) | **Del spec al harness** — presentación, ejemplo trabajado y preparación de una tarea verificable |
+| [`estacion6`](./estacion6) | **Del spec al harness** — evaluación de la spec (skill `evaluate-spec`), `design.md`, plan de tareas como grafo y publicación en Linear |
 | [`estacion7`](./estacion7) | **Orquestación de trabajo**: recorrido por Parlina y demo de OpenSymphony, revisión, landing y memoria |
 | [`estacion8`](./estacion8) | **Aseguramiento de calidad** — guía del estudiante, slides y los repos de práctica `qa-api`, `qa-e2e` y `qa-agent-eval` |
 | [`estacion9`](./estacion9) | **Despliegue (IaC)** — guía del estudiante, slides y los repos `iac-infra` (Terraform sobre LocalStack y AWS) y `localstack` |
