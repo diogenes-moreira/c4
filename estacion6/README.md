@@ -29,9 +29,9 @@ La clase está dividida en módulos que se sostienen solos: cada uno entra con u
 | 2 · Evaluar la spec | 25 | Tu spec de E4 y E5 | `docs/spec-review.md` con nota A–D | Arnés (skill) |
 | Pausa | 5 | | | |
 | 3 · design.md + Linear | 17 | Spec con nota A o B | `design.md` y fuentes de verdad claras | Arnés, MCP |
-| 4 · Del plan al grafo | 33 | Spec + `design.md` | Paquete de tareas y grafo en Linear | Arnés, Orquestador, MCP |
-| 5 · Loop y orquestador | 7 | Grafo publicado | Qué automatiza E7 | Loop, Orquestador |
-| Cierre | 8 | | Preparación de E7 clara | |
+| 4 · Del plan al grafo | 30 | Spec + `design.md` | Paquete de tareas y grafo en Linear | Arnés, Orquestador, MCP |
+| 5 · Loop y orquestador | 12 | Grafo publicado | Qué automatiza E7: meta-arnés y OpenSymphony | Loop, Orquestador |
+| Cierre | 6 | | Preparación de E7 clara | |
 
 ## Qué cambió respecto de la versión anterior
 

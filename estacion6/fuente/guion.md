@@ -21,11 +21,11 @@ La estación responde a una sola pregunta: **¿tu spec está lista para implemen
 | 25–50 | 9–12 | 2 · Evaluar la spec | 2 min contraste ambigua/preparada. 3 min las tres lentes. 3 min la nota ABCD. 17 min de práctica con `evaluate-spec`. |
 | 50–55 | 13 | Pausa | Al volver, preguntar qué nota sacaron dos o tres personas. |
 | 55–72 | 14–16 | 3 · design.md + Linear | 5 min fuentes de verdad. 5 min design.md con la plantilla abierta. 5 min Linear vía MCP. 2 min de preguntas. |
-| 72–105 | 17–21 | 4 · Del plan al grafo | 2 min de AIDLC a tareas. 2 min la skill. 2 min el grafo: qué tareas están listas. 2 min publicación con dry-run. 25 min de práctica en parejas. |
-| 105–112 | 22 | 5 · Loop y orquestador | Recorrer el ciclo de una tarea. Aclarar qué se hace a mano en E7 y qué automatiza el orquestador. |
-| 112–120 | 23–24 | Cierre | Responder el estacionamiento, checklist de preparación de E7 y dónde están las skills. |
+| 72–102 | 17–21 | 4 · Del plan al grafo | 2 min de AIDLC a tareas. 2 min la skill. 2 min el grafo: qué tareas están listas. 2 min publicación con dry-run. 22 min de práctica en parejas. |
+| 102–114 | 22–24 | 5 · Loop y orquestador | 3 min el ciclo de una tarea. 4 min el meta-arnés: un arnés que reparte trabajo entre otros, cada uno con su modelo y su suscripción. 5 min OpenSymphony: cómo ejecuta el grafo de Linear (tareas listas, workspace por issue, PR, review automático, merge humano y desbloqueo). Aclarar que la demo en vivo es en E7. |
+| 114–120 | 25–26 | Cierre | Responder el estacionamiento, checklist de preparación de E7 y dónde están las skills. |
 
-En caso de retraso, proteger los dos bloques de práctica (módulos 2 y 4). El módulo 1 se puede dar en 10 minutos y el 5 en 3.
+En caso de retraso, proteger los dos bloques de práctica (módulos 2 y 4). El módulo 1 se puede dar en 10 minutos y el 5 en 5, dejando solo la slide de OpenSymphony.
 
 ## Reglas para el instructor
 
@@ -54,7 +54,7 @@ Sobre ABCD: la rúbrica no estaba definida en el post-mortem. Esta versión la c
 
 ## Módulo 4: práctica en parejas
 
-12 min para generar el paquete con `create-implementation-plan`; 7 min de revisión cruzada (cobertura, ciclos, tareas listas); 6 min de dry-run con `convert-tasks-to-linear` o carga manual de las primeras tareas. El paquete completo se termina como preparación de E7.
+11 min para generar el paquete con `create-implementation-plan`; 6 min de revisión cruzada (cobertura, ciclos, tareas listas); 5 min de dry-run con `convert-tasks-to-linear` o carga manual de las primeras tareas. El paquete completo se termina como preparación de E7.
 
 Si falta acceso a Linear, se entrega el paquete validado y se registra «publicación pendiente».
 
