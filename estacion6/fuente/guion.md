@@ -16,7 +16,7 @@ La estación responde a una sola pregunta: **¿tu spec está lista para implemen
 
 | Reloj | Slides | Módulo | Qué hacer |
 |---|---|---|---|
-| 0–8 | 1–4 | Apertura | Mostrar la salida de hoy. Presentarse en 2 minutos (slide 2). Recorrer el mapa completo (slide 3) y la ruta por módulos (slide 4). |
+| 0–8 | 1–4 | Apertura | Mostrar la salida de hoy. Presentarse en 2 minutos (slide 2) y aclarar que Leonardo González no está en esta edición: el instructor lo reemplaza, y OpenSymphony y las skills de planificación son trabajo de Leonardo. Recorrer el mapa completo (slide 3) y la ruta por módulos (slide 4). |
 | 8–25 | 5–8 | 1 · Del LLM al orquestador | Dos piezas por slide, 3 min cada una. En la slide 7, recorrer el diagrama del arnés de afuera hacia adentro: orquestador, arnés, agente, LLM y MCP (3 min). Cerrar con el ejercicio de 5 min: cada uno ubica su herramienta en el mapa y dice qué pieza le falta. |
 | 25–50 | 9–12 | 2 · Evaluar la spec | 2 min contraste ambigua/preparada. 3 min las tres lentes. 3 min la nota ABCD. 17 min de práctica con `evaluate-spec`. |
 | 50–55 | 13 | Pausa | Al volver, preguntar qué nota sacaron dos o tres personas. |
