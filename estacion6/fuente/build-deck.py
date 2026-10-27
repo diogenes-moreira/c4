@@ -169,6 +169,48 @@ slide("Lo que rodea al agente", ["Arnés", "Loop"], "MÓDULO 1", """
 </div>
 <p class="take">Sin criterio de aceptación, el loop no sabe cuándo parar. Por eso hoy trabajamos la spec.</p>""")
 
+slide("Anatomía de un arnés", ["Arnés"], "MÓDULO 1", """
+<p class="eyebrow">MÓDULO 1 · DEL LLM AL ORQUESTADOR</p>
+<h1 style="margin-bottom:10px">Anatomía de un arnés</h1>
+<svg viewBox="0 0 1152 500" width="1152" height="500" role="img" aria-label="Anatomía de un arnés: el LLM dentro del coding agent, rodeado por contexto, skills, permisos, hooks, memoria y loop; el orquestador despacha tareas y MCP conecta con Linear, GitHub y documentación" style="display:block;margin-top:6px;font-family:Calibri,Aptos,Arial,sans-serif">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#C8E600"/></marker></defs>
+<rect x="210" y="8" width="620" height="484" fill="#111" stroke="#C8E600" stroke-width="2" stroke-dasharray="8 6"/>
+<text x="230" y="40" fill="#C8E600" font-size="20" font-weight="700" letter-spacing="2">ARNÉS</text>
+<g font-size="18" fill="#B3B3B3">
+<rect x="230" y="62" width="160" height="104" fill="#0A0A0A" stroke="#4D4D4D"/><text x="246" y="90" fill="white" font-size="21" font-weight="700">Contexto</text><text x="246" y="116">AGENTS.md</text><text x="246" y="138">design.md · spec</text>
+<rect x="230" y="186" width="160" height="104" fill="#0A0A0A" stroke="#4D4D4D"/><text x="246" y="214" fill="white" font-size="21" font-weight="700">Skills</text><text x="246" y="240">evaluate-spec</text><text x="246" y="262">create-impl-plan</text>
+<rect x="230" y="310" width="160" height="80" fill="#0A0A0A" stroke="#4D4D4D"/><text x="246" y="338" fill="white" font-size="21" font-weight="700">Permisos</text><text x="246" y="364">qué puede tocar</text>
+<rect x="650" y="62" width="160" height="104" fill="#0A0A0A" stroke="#4D4D4D"/><text x="666" y="90" fill="white" font-size="21" font-weight="700">Hooks</text><text x="666" y="116">evento → acción</text><text x="666" y="138">bloquea · registra</text>
+<rect x="650" y="186" width="160" height="104" fill="#0A0A0A" stroke="#4D4D4D"/><text x="666" y="214" fill="white" font-size="21" font-weight="700">Memoria</text><text x="666" y="240">notas de la tarea</text><text x="666" y="262">compactación</text>
+<rect x="650" y="310" width="160" height="80" fill="#0A0A0A" stroke="#4D4D4D"/><text x="666" y="338" fill="white" font-size="21" font-weight="700">Evidencia</text><text x="666" y="364">tests · diff · logs</text>
+</g>
+<rect x="410" y="62" width="220" height="250" fill="#0A0A0A" stroke="#808080"/>
+<text x="520" y="92" fill="white" font-size="21" font-weight="700" text-anchor="middle">Coding agent</text>
+<rect x="450" y="130" width="140" height="84" fill="#C8E600"/>
+<text x="520" y="180" fill="#0A0A0A" font-size="30" font-weight="700" text-anchor="middle">LLM</text>
+<text x="520" y="248" fill="#B3B3B3" font-size="18" text-anchor="middle">lee · edita</text>
+<text x="520" y="272" fill="#B3B3B3" font-size="18" text-anchor="middle">ejecuta · observa</text>
+<rect x="410" y="332" width="220" height="140" fill="#0A0A0A" stroke="#C8E600"/>
+<text x="520" y="362" fill="#C8E600" font-size="21" font-weight="700" text-anchor="middle">Loop</text>
+<text x="520" y="392" fill="white" font-size="18" text-anchor="middle">planear → editar</text>
+<text x="520" y="418" fill="white" font-size="18" text-anchor="middle">→ probar → corregir</text>
+<text x="520" y="452" fill="#808080" font-size="16" text-anchor="middle">hasta cumplir la aceptación</text>
+<rect x="0" y="186" width="170" height="104" fill="#0A0A0A" stroke="#4D4D4D"/>
+<text x="16" y="214" fill="white" font-size="21" font-weight="700">Orquestador</text>
+<text x="16" y="240" fill="#B3B3B3" font-size="18">despacha tareas</text>
+<text x="16" y="262" fill="#B3B3B3" font-size="18">sin bloqueos</text>
+<line x1="170" y1="238" x2="206" y2="238" stroke="#C8E600" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="870" y="62" width="120" height="70" fill="#C8E600"/>
+<text x="930" y="105" fill="#0A0A0A" font-size="24" font-weight="700" text-anchor="middle">MCP</text>
+<line x1="830" y1="97" x2="866" y2="97" stroke="#C8E600" stroke-width="2" marker-end="url(#ah)"/>
+<g font-size="20" fill="white">
+<rect x="1010" y="62" width="142" height="56" fill="#0A0A0A" stroke="#4D4D4D"/><text x="1026" y="97">Linear</text>
+<rect x="1010" y="136" width="142" height="56" fill="#0A0A0A" stroke="#4D4D4D"/><text x="1026" y="171">GitHub</text>
+<rect x="1010" y="210" width="142" height="56" fill="#0A0A0A" stroke="#4D4D4D"/><text x="1026" y="245">Docs y APIs</text>
+</g>
+<g stroke="#4D4D4D" stroke-width="2" fill="none"><path d="M990 90 H1010"/><path d="M990 110 C1000 110 1000 164 1010 164"/><path d="M990 120 C1004 120 1000 238 1010 238"/></g>
+</svg>""")
+
 slide("Coordinar y conectar", ["Orquestador", "MCP"], "MÓDULO 1", """
 <p class="eyebrow">MÓDULO 1 · DEL LLM AL ORQUESTADOR</p>
 <h1>Coordinar y conectar</h1>
