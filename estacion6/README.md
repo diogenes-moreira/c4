@@ -9,6 +9,7 @@ Todo el recorrido usa un mapa fijo que aparece arriba en cada slide, con la piez
 ## Material de clase
 
 - [Presentación PDF](estacion6.pdf).
+- [Presentación PowerPoint](estacion6.pptx): cada slide como imagen, igual al HTML. Se genera con [`fuente/build-pptx.py`](fuente/build-pptx.py).
 - [Presentación HTML editable](estacion6.html). Se genera con [`fuente/build-deck.py`](fuente/build-deck.py).
 - [Skill evaluate-spec](skills/evaluate-spec/SKILL.md): evalúa la spec con tres lentes (producto, TDD y diseño) y le pone una nota de A a D.
 - [Skill create-implementation-plan](skills/create-implementation-plan/SKILL.md): copia de la skill de OpenSymphony que genera el paquete de tareas.
