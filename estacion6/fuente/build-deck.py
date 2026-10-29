@@ -388,13 +388,13 @@ slide("OpenSymphony", ["Orquestador", "Loop"], "MÓDULO 5", """
 
 slide("Antes de la estación 7", [], "CIERRE", """
 <p class="eyebrow">PREPARACIÓN E7</p>
-<h1>Llega con esto listo</h1>
+<h1>Antes del lunes: tu rebanada lista</h1>
 <div class="checklist">
-<p><b>01</b>docs/spec-review.md con nota A o B.</p>
-<p><b>02</b>design.md en la raíz del repo.</p>
-<p><b>03</b>Paquete completo: task-package.yaml, milestones.md, tareas y cobertura.md.</p>
-<p><b>04</b>Grafo publicado en Linear, o «publicación pendiente» registrada.</p>
-<p><b>05</b>Accesos probados: arnés, Git, GitHub y Linear.</p>
+<p><b>01</b>Elige una rebanada: un solo flujo que un usuario completa de punta a punta.</p>
+<p><b>02</b>Escribe la spec mínima: problema, usuario, flujo, 3 criterios y qué queda fuera.</p>
+<p><b>03</b>Evalúala con evaluate-spec hasta nota A o B.</p>
+<p><b>04</b>Entorno listo: repo en GitHub, Claude Code en el repo y acceso a Linear.</p>
+<p><b>05</b>Genera el plan: de 3 a 6 tareas con create-implementation-plan.</p>
 </div>
 <p class="source">Guía completa: estacion7/preparacion.md</p>""")
 

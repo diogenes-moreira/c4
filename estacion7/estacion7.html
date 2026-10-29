@@ -1,35 +1,207 @@
-<!doctype html>
-<html lang="es">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Estación 7 · Orquestación de trabajo</title>
-<style>:root{--bg:#0A0A0A;--surface:#1A1A1A;--line:#2A2A2A;--lime:#C8E600;--text:#FFFFFF;--body:#E6E6E6;--muted:#808080;--orange:#FF8C00}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--body);font-family:Calibri,Aptos,Arial,sans-serif;letter-spacing:0}.deck{display:grid;gap:28px;padding:28px;justify-content:center}.slide{position:relative;width:1280px;height:720px;padding:40px 56px 50px;background:var(--bg);overflow:hidden}.slide:before{content:"";display:block;width:64px;height:5px;background:var(--lime);margin-bottom:18px}.eyebrow{font-size:15px;color:var(--lime);font-weight:700;margin:0 0 14px}h1{font-size:42px;line-height:1.12;color:var(--text);margin:0 0 26px;max-width:1168px}h2{font-size:24px;line-height:1.2;color:var(--text);margin:0 0 12px}p{font-size:21px;line-height:1.35;margin:14px 0}.lead{font-size:24px}.footer{position:absolute;bottom:20px;left:56px;right:56px;display:flex;justify-content:space-between;font-size:12px;color:var(--muted)}a{color:var(--lime);text-decoration:none}a:hover{text-decoration:underline}small{display:block;font-size:18px;line-height:1.35;font-weight:400;color:var(--body);margin-top:8px}.columns{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:26px}.columns>div+div{border-left:1px solid var(--line);padding-left:32px}.flow{display:flex;align-items:center;gap:16px;margin:28px 0 34px}.flow>div{flex:1;padding:18px 10px;border-top:3px solid var(--lime);min-height:100px;font-size:24px;font-weight:700}.flow>b{color:var(--lime);font-size:24px}table{border-collapse:collapse;width:100%;font-size:21px;line-height:1.3;margin:22px 0}th{text-align:left;background:var(--lime);color:var(--surface);padding:12px 16px;font-size:18px}td{padding:13px 16px;border-bottom:1px solid var(--line);vertical-align:top}td:first-child{width:29%;color:var(--text)}td small{font-size:15px;color:var(--muted);margin-top:5px}.note{font-size:18px;border-left:3px solid var(--lime);padding:10px 18px;margin-top:24px}.source,.caption{font-size:15px;color:var(--muted);line-height:1.35}.demo{position:absolute;bottom:55px;left:56px;right:56px;padding:14px 18px;background:#3A1F00;border-left:3px solid var(--orange);font-size:18px}.agenda{display:grid;grid-template-columns:1fr 1.2fr .8fr;gap:36px;margin:55px 0}.agenda strong{display:block;color:var(--lime);font-size:60px;margin-bottom:26px}.timeline{display:grid;grid-template-columns:120px 1fr}.timeline>*{padding:17px 18px;border-bottom:1px solid var(--line);font-size:21px}.timeline b{color:var(--orange)}pre{padding:22px;background:var(--surface);font-size:21px;line-height:1.6;white-space:pre-wrap}code{font-family:Consolas,monospace;font-size:.88em;overflow-wrap:anywhere}.contract{display:grid;grid-template-columns:190px 1fr}.contract>*{padding:19px 14px;border-bottom:1px solid var(--line);font-size:21px}.contract b{color:var(--lime)}.cover-shot{width:1168px;height:345px;object-fit:contain;object-position:left center;margin-top:12px}.product-shot{display:block;width:1168px;height:438px;object-fit:contain;object-position:left center}.memory-layout{display:grid;grid-template-columns:700px 1fr;gap:32px}.memory-layout img{width:700px;height:440px;object-fit:contain;object-position:top}.memory-layout p{font-size:18px;margin:8px 0 22px}.slide:focus{outline:2px solid var(--lime)}@media print{@page{size:1280px 720px;margin:0}.deck{display:block;padding:0}.slide{break-after:page;margin:0}.slide:last-child{break-after:auto}.slide:focus{outline:none}}</style></head>
-<body>
-<script type="application/json" id="deck-metadata">{"title":"Estación 7: Orquestación de trabajo","audience":"Hardcore AI C4","date":"2026-09-17","visualSystem":"DESIGN.md","assetCredits":"Capturas de referencia del repositorio kumanday/OpenSymphony, docs/images; contienen datos de ejemplo.","courseAlignment":"Seis secciones y 23 lecciones de Parlina."}</script>
-<main class="deck">
-<section class="slide" contenteditable="true" spellcheck="true" aria-label="1. Orquestación de trabajo"><p class="eyebrow">ESTACIÓN 7 · COHORTE 4</p><h1>Orquestación de trabajo</h1><p class="lead">Del spec a tareas ejecutables, revisión por agentes y memoria del proyecto.</p><img class="cover-shot" src="assets/opensymphony-tareas.png" alt="Interfaz de referencia del grafo de tareas de OpenSymphony"><p class="caption">OpenSymphony · captura de referencia del repositorio, con datos de ejemplo.</p><footer class="footer"><span>Hardcore AI by 30X · Estación 7</span><span>01 / 20</span></footer></section>
-<section class="slide" contenteditable="true" spellcheck="true" aria-label="2. Conceptos y demostración en vivo"><p class="eyebrow">RECORRIDO · 120 MIN</p><h1>Conceptos y demostración en vivo</h1><div class="agenda"><div><strong>50 min</strong><h2>Curso de Parlina</h2><p>Seis secciones. Recorrido por las portadas de las 23 lecciones, con ejemplos para el proyecto.</p></div><div><strong>60 min</strong><h2>OpenSymphony</h2><p>Instalación, planificación, publicación, despacho, landing y navegación por los grafos.</p></div><div><strong>10 min</strong><h2>Preguntas</h2><p>Elección de arnés, integración con el proyecto y decisiones de automatización.</p></div></div><p class="note">La demo sigue una tarea nueva y retoma otra que ya pasó por varios ciclos de revisión.</p><footer class="footer"><span>Hardcore AI by 30X · Estación 7</span><span>02 / 20</span></footer></section>
-<section class="slide" contenteditable="true" spellcheck="true" aria-label="3. Fundamentos y Taxonomía de la Ingeniería Agencial"><p class="eyebrow">PARLINA · SECCIÓN 1 · LECCIONES 1-3</p><h1>Fundamentos y Taxonomía de la Ingeniería Agencial</h1><table style="font-size:18px"><tr><th>Lección</th><th>Conceptos del curso</th><th>Aplicación en el proyecto</th></tr><tr><td>01 · Fronteras operativas</td><td>Modelo, arnés, meta-arnés y sistema de trabajo: responsabilidades y límites.</td><td>Identificar quién ejecuta herramientas, administra sesiones y coordina tareas.</td></tr><tr><td>02 · Clientes y hosts multiarnés</td><td>Topología host-cliente; Orca, Paseo y OpenChamber; instancias persistentes y worktrees paralelos.</td><td>Elegir dónde corren los agentes y desde qué interfaz se supervisan.</td></tr><tr><td>03 · Estado, persistencia y memoria</td><td>Estado de conversación, agente, repositorio y tracker; autoridad en base de datos, tracker o archivos.</td><td>Definir qué fuente gobierna cada estado y cómo reconciliarlo después de un fallo.</td></tr></table><p class="note">Al recuperar trabajo, distinguir el registro que gobierna el estado de los resúmenes o vistas derivados.</p><footer class="footer"><span>Hardcore AI by 30X · Estación 7</span><span>03 / 20</span></footer></section>
-<section class="slide" contenteditable="true" spellcheck="true" aria-label="4. Patrones Arquitectónicos de Coordinación Agencial"><p class="eyebrow">PARLINA · SECCIÓN 2 · LECCIONES 4-7</p><h1>Patrones Arquitectónicos de Coordinación Agencial</h1><table style="font-size:18px"><tr><th>Lección</th><th>Mecanismo de coordinación</th><th>Aplicación en el proyecto</th></tr><tr><td>04 · Ralph y variantes</td><td>Contexto fresco, estado en disco y ciclo Plan/Build; comprobaciones mecánicas que condicionan el avance.</td><td>Acotar entregas y definir validación, límites de iteración y condiciones de salida.</td></tr><tr><td>05 · Gas Town</td><td>Identidad persistente, Beads y Convoys; hooks, supervisión jerárquica y cola de integración Refinery.</td><td>Examinar aislamiento, capacidad y recuperación de trabajo concurrente como caso histórico.</td></tr><tr><td>06 · De GSD a GSD Pi</td><td>SQLite como autoridad durable, proyecciones Markdown y operaciones transaccionales; hitos, slices y tareas.</td><td>Comprobar idempotencia y recuperación ante fallos en el motor de trabajo.</td></tr><tr><td>07 · oh-my-openagent</td><td>IntentGate, agente principal y especialistas; enrutamiento multimodelo, contingencias y Team Mode en tmux.</td><td>Asignar modelos por tipo de trabajo y prever fallos de proveedor.</td></tr></table><p class="source">Resumen de las lecciones de Parlina. La actualización sobre Gas Town se presenta en la diapositiva 9.</p><footer class="footer"><span>Hardcore AI by 30X · Estación 7</span><span>04 / 20</span></footer></section>
-<section class="slide" contenteditable="true" spellcheck="true" aria-label="5. Arneses de Desarrollo e Integración Programática"><p class="eyebrow">PARLINA · SECCIÓN 3 · LECCIONES 8-11</p><h1>Arneses de Desarrollo e Integración Programática</h1><table style="font-size:18px"><tr><th>Lección</th><th>Conceptos del curso</th><th>Aplicación en el proyecto</th></tr><tr><td>08 · Codex app-server</td><td>JSON-RPC 2.0; Thread, Turn e Item; streaming, control de turnos y aprobaciones.</td><td>Diseñar el cliente y su contrato de ejecución, eventos y permisos.</td></tr><tr><td>09 · pi SDK y extensiones</td><td>AgentSession y AgentSessionRuntime; concurrencia, eventos, permisos y registro de herramientas.</td><td>Integrar el arnés en proceso y controlar la cola de mutación de archivos.</td></tr><tr><td>10 · oh-my-pi</td><td>Ejecución nativa; edición con Hashline; LSP, DAP y aislamiento de subagentes con pi-iso.</td><td>Analizar fallos de edición, comprobar semántica y depurar con herramientas estructurales.</td></tr><tr><td>11 · Claude Agent SDK,<br>OpenHands y OpenCode</td><td>Topologías de integración, acoplamiento a proveedores y políticas de aislamiento.</td><td>Elegir SDK según despliegue, modelos, permisos y sandboxing.</td></tr></table><p class="note">La integración define cómo se inicia una ejecución, cómo se observa y qué controles limitan sus acciones.</p><footer class="footer"><span>Hardcore AI by 30X · Estación 7</span><span>05 / 20</span></footer></section>
-<section class="slide" contenteditable="true" spellcheck="true" aria-label="6. OpenAI Symphony: Especificación Normativa y Motor Central"><p class="eyebrow">PARLINA · SECCIÓN 4 · LECCIONES 12-15</p><h1>OpenAI Symphony: Especificación Normativa y Motor Central</h1><table style="font-size:18px"><tr><th>Lección</th><th>Conceptos del curso</th><th>Aplicación en el proyecto</th></tr><tr><td>12 · Contrato WORKFLOW.md</td><td>Front matter tipado, resolución de configuración, plantillas estrictas y recarga dinámica.</td><td>Validar el contrato y detener el despacho cuando su configuración es inválida.</td></tr><tr><td>13 · Workspaces</td><td>Persistencia por issue; validación de rutas, contención en la raíz y hooks de ciclo de vida.</td><td>Preparar y recuperar el entorno de cada tarea sin mezclar sus archivos.</td></tr><tr><td>14 · Política de despacho</td><td>Elegibilidad y orden estable; concurrencia, continuación de sesiones y reintentos con espera creciente.</td><td>Determinar qué puede ejecutarse ahora y cuándo volver a intentar.</td></tr><tr><td>15 · Reconciliación y seguridad</td><td>Detección de estancamiento, actualización desde el tracker y aislamiento de secretos.</td><td>Reconciliar la ejecución con el estado vigente y diagnosticar bloqueos.</td></tr></table><footer class="footer"><span>Hardcore AI by 30X · Estación 7</span><span>06 / 20</span></footer></section>
-<section class="slide" contenteditable="true" spellcheck="true" aria-label="7. OpenSymphony: Implementación Local-First en Rust y Extensiones"><p class="eyebrow">PARLINA · SECCIÓN 5 · LECCIONES 16-19</p><h1>OpenSymphony: Implementación Local-First en Rust y Extensiones</h1><table style="font-size:18px"><tr><th>Lección</th><th>Conceptos del curso</th><th>Aplicación en el proyecto</th></tr><tr><td>16 · Arquitectura en Rust</td><td>Demonio y módulos internos; flujo de datos, despacho jerárquico y configuración.</td><td>Seguir el recorrido de un issue hasta su ejecución en el arnés.</td></tr><tr><td>17 · Linear y rutas de ejecución</td><td>Adaptador GraphQL, credenciales y cuotas; OpenHands Agent Server o Codex app-server.</td><td>Elegir y autenticar la ruta de ejecución; recuperar sesiones de depuración.</td></tr><tr><td>18 · Grafos y memoria</td><td>Grafo de tareas, cápsulas Markdown, índice DuckDB y AST con Tree-sitter.</td><td>Capturar conocimiento de tareas completadas y recuperar contexto para las siguientes.</td></tr><tr><td>19 · Supervisión operativa</td><td>FrankenTUI y desktop; doctor, diffs, grafos, debug y rehidratación.</td><td>Inspeccionar un bloqueo, comprobar el entorno y retomar una sesión.</td></tr></table><footer class="footer"><span>Hardcore AI by 30X · Estación 7</span><span>07 / 20</span></footer></section>
-<section class="slide" contenteditable="true" spellcheck="true" aria-label="8. Gobernanza, Verificación Mecánica y Evaluación Empírica"><p class="eyebrow">PARLINA · SECCIÓN 6 · LECCIONES 20-23</p><h1>Gobernanza, Verificación Mecánica y Evaluación Empírica</h1><table style="font-size:18px"><tr><th>Lección</th><th>Conceptos del curso</th><th>Aplicación en el proyecto</th></tr><tr><td>20 · Planificación y publicación</td><td>Todo el alcance, task-package.yaml, Definition of Ready, grafo acíclico y publicación idempotente.</td><td>Comprobar cobertura y dependencias antes de publicar en Linear.</td></tr><tr><td>21 · Calidad y cierre</td><td>Pruebas, controles automatizados, autoridad de transición, presupuestos y límites de reintento.</td><td>Exigir evidencia para cerrar una tarea y detectar falta de progreso.</td></tr><tr><td>22 · EBO y Behavior Atlas</td><td>Ejecución, captura y resolución; trayectorias del arnés, ontología de comportamiento y evaluación.</td><td>Inspeccionar evidencia capturada y analizar anomalías de comportamiento.</td></tr><tr><td>23 · Mejora de arneses</td><td>exoharness: ejecutor efímero y estado durable. Prime Agent: arnés continuo y /refine.</td><td>Observar, diagnosticar, refinar y validar cambios con un estado previo recuperable.</td></tr></table><p class="note">En exoharness, el ejecutor propone cambios; el arnés conserva la autoridad sobre estado, recursos y controles.</p><footer class="footer"><span>Hardcore AI by 30X · Estación 7</span><span>08 / 20</span></footer></section>
-<section class="slide" contenteditable="true" spellcheck="true" aria-label="9. Gas Town: coordinación y confiabilidad"><p class="eyebrow">ACTUALIZACIÓN DEL CURSO</p><h1>Gas Town: coordinación y confiabilidad</h1><div class="columns"><div><h2>La propuesta de Yegge</h2><p>Trabajo representado como grafo, con roles, memoria, autoridad, revisión y recuperación.</p><p>Su giro hacia Wheelhouse plantea una orquestación ligada a las necesidades del producto.</p><p class="source">Síntesis aportada por el instructor de <a href="https://yegge.ai/essays/the-shape-of-things-to-come/">The Shape of Things to Come</a>.</p></div><div><h2>La crítica sobre resultados</h2><p>El <a href="https://www.latent.space/p/ainews-reality-checks-on-ai-news">comentario citado en AI News</a> interpreta que Yegge no logró construir algo con Gas Town y cuestiona la confiabilidad de estos orquestadores.</p><p>Es una crítica reportada; no aporta aquí una comparación experimental entre sistemas.</p></div></div><p class="note">Para evaluar un orquestador: seguir tareas hasta su integración y registrar dónde necesitaron corrección o intervención.</p><footer class="footer"><span>Hardcore AI by 30X · Estación 7</span><span>09 / 20</span></footer></section>
-<section class="slide" contenteditable="true" spellcheck="true" aria-label="10. Qué aporta EBO hoy"><p class="eyebrow">OBSERVABILIDAD Y EVALUACIÓN</p><h1>Qué aporta EBO hoy</h1><div class="flow"><div>Eventos<small>agente / arnés</small></div><b>→</b><div>Ontología<small>comportamiento</small></div><b>→</b><div>Evaluación<small>criterios y evidencia</small></div></div><div class="columns"><div><h2>Alcance actual</h2><p>Observabilidad de eventos de agente y arnés, con una capa de ontología de comportamiento y su evaluación.</p><p>Permite analizar el comportamiento capturado; la evidencia disponible depende de la integración.</p></div><div><h2>Posible extensión futura</h2><p>Vincular esas observaciones con tareas, revisiones y resultados de integración.</p><p>Requeriría instrumentación adicional para investigar dónde falla la coordinación. No forma parte del alcance actual.</p></div></div><p class="source"><a href="https://github.com/trilogy-group/engineering-behavior-observatory/">Engineering Behavior Observatory</a></p><footer class="footer"><span>Hardcore AI by 30X · Estación 7</span><span>10 / 20</span></footer></section>
-<section class="slide" contenteditable="true" spellcheck="true" aria-label="11. Del spec al landing"><p class="eyebrow">DEMO DEL INSTRUCTOR · 60 MIN</p><h1>Del spec al landing</h1><div class="timeline"><b>10 min</b><span>Instalar y configurar OpenSymphony en un repo de demostración.</span><b>15 min</b><span>Descomponer el alcance, revisar el paquete y publicar tareas en Linear.</span><b>10 min</b><span>Correr el orquestador y observar un despacho.</span><b>10 min</b><span>Recorrer revisiones previas e integrar un PR ya preparado.</span><b>15 min</b><span>Explorar tareas, cápsulas de memoria y código en la app desktop.</span></div><p class="demo">La tarea despachada puede seguir ejecutándose mientras examinamos el PR ya revisado.</p><footer class="footer"><span>Hardcore AI by 30X · Estación 7</span><span>11 / 20</span></footer></section>
-<section class="slide" contenteditable="true" spellcheck="true" aria-label="12. Conectar el repositorio, Linear y el arnés"><p class="eyebrow">DEMO · INSTALACIÓN</p><h1>Conectar el repositorio, Linear y el arnés</h1><div class="columns"><div><h2>Terminal del repositorio</h2><pre><code>cargo install opensymphony
-opensymphony init
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Estación 7 · Del backlog al merge</title><style>
+:root{--lime:#C8E600}*{box-sizing:border-box}
+body{margin:0;background:#262626;color:#E6E6E6;font-family:Calibri,Aptos,Arial,sans-serif;letter-spacing:0}
+.deck{display:grid;gap:24px;padding:24px;justify-items:center}
+.slide{position:relative;width:1280px;height:720px;padding:84px 64px 40px;background:#0A0A0A;overflow:hidden}
+.map{position:absolute;top:24px;left:64px;right:64px;display:flex;align-items:center;gap:8px;font-size:15px;color:#666}
+.map span{padding:5px 12px;border:1px solid #333;border-radius:999px;white-space:nowrap}
+.map span.on{color:#0A0A0A;background:var(--lime);border-color:var(--lime);font-weight:700}
+.map em{font-style:normal;color:#4D4D4D}
+.map .here{margin-left:auto;color:#808080;font-size:13px;letter-spacing:.08em}
+.eyebrow{color:var(--lime);font-size:18px;font-weight:700;margin:0 0 14px;letter-spacing:.04em}
+h1{color:white;font-size:42px;line-height:1.08;margin:0 0 24px}
+h2{color:white;font-size:24px;margin:0 0 12px}
+p{font-size:24px;line-height:1.32;margin:0 0 14px}
+.small{font-size:21px}.label{color:var(--lime);font-size:18px;font-weight:bold}.bad{color:#FF4444}
+.take{background:#1F2A05;padding:16px 22px;font-size:24px;margin-top:22px}
+.source{font-size:18px;color:#808080}a{color:inherit}
+.footer{position:absolute;bottom:20px;left:64px;right:64px;display:flex;justify-content:space-between;color:#808080;font-size:12px}
+.three{display:grid;grid-template-columns:repeat(3,1fr);gap:34px;margin-top:20px}
+.three>div,.two>div{border-top:1px solid #2A2A2A;padding-top:18px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:46px;margin-top:20px}
+.comparison{display:grid;grid-template-columns:1fr 1fr;gap:46px;margin-top:20px}
+.comparison>div+div{border-left:1px solid #2A2A2A;padding-left:45px}
+.comparison blockquote{margin:24px 0;font-size:40px;line-height:1.15;color:white}
+.num{font-size:54px;color:var(--lime);display:block;margin-bottom:10px}
+.example{color:#B3B3B3;font-size:21px}
+table{border-collapse:collapse;width:100%;font-size:21px;line-height:1.25;margin-top:16px}
+th{background:var(--lime);color:#1A1A1A;text-align:left;padding:12px 16px}
+td{padding:13px 16px;border-bottom:1px solid #4D4D4D;vertical-align:top}
+td:first-child{color:white;font-weight:bold}
+code{font-size:20px;color:white}
+.steps>div{display:flex;gap:30px;border-bottom:1px solid #4D4D4D;padding:16px 0;font-size:24px}
+.steps b{color:var(--lime);min-width:96px}
+.checklist p{border-bottom:1px solid #4D4D4D;padding:14px 0;font-size:24px;margin:0}
+.checklist b{color:var(--lime);margin-right:22px}
+.chain{display:flex;align-items:stretch;gap:12px;margin:26px 0}
+.chain div{flex:1;border:1px solid #4D4D4D;padding:16px 14px}
+.chain div.on{border-color:var(--lime)}
+.chain strong{display:block;color:white;font-size:22px;margin-bottom:8px}
+.chain span{font-size:18px;color:#B3B3B3;line-height:1.3;display:block}
+.chain i{align-self:center;font-style:normal;color:var(--lime);font-size:28px;flex:0}
+.grades{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:20px}
+.grades div{border-top:4px solid #4D4D4D;padding-top:14px}
+.grades div.ok{border-color:var(--lime)}
+.grades b{font-size:64px;color:white;display:block;line-height:1}
+.grades div.ok b{color:var(--lime)}
+.grades strong{display:block;font-size:22px;color:white;margin:10px 0 6px}
+.grades span{font-size:19px;color:#B3B3B3;line-height:1.3;display:block}
+.graph{display:grid;grid-template-columns:1fr 40px 1fr 40px 1fr;align-items:center;row-gap:22px;margin-top:22px}
+.node{border:1px solid #4D4D4D;padding:12px 14px;font-size:19px;line-height:1.25}
+.node b{display:block;color:white;font-size:18px;letter-spacing:.03em}
+.node.ready{border:2px solid var(--lime)}
+.arrow{text-align:center;color:var(--lime);font-size:26px}
+.legend{display:flex;gap:28px;font-size:18px;color:#B3B3B3;margin-top:20px}
+.legend span:before{content:"";display:inline-block;width:14px;height:14px;margin-right:8px;vertical-align:-2px;border:1px solid #4D4D4D}
+.legend span.r:before{border:2px solid var(--lime)}
+.modules td:first-child{white-space:nowrap}
+.tight td{padding:9px 16px}.tight th{padding:10px 16px}
+.cover h1{font-size:60px;max-width:1000px}
+.cover .lead{font-size:28px;max-width:950px;color:#E6E6E6}
+.big{font-size:30px;line-height:1.3;color:white}
+.bio{display:grid;grid-template-columns:380px 1fr;gap:56px;align-items:start;margin-top:4px}
+.bio img{width:380px;height:500px;object-fit:cover;object-position:50% 30%;border-radius:4px}
+.bio .rows>div{border-top:1px solid #2A2A2A;padding:12px 0}
+.bio .rows strong{display:block;color:white;font-size:22px}
+.bio .rows span{display:block;color:#B3B3B3;font-size:18px;line-height:1.3;margin-top:4px}
+.slide:focus{outline:2px solid var(--lime)}
+@media print{@page{size:1280px 720px;margin:0}body{background:#0A0A0A}.deck{display:block;padding:0}
+.slide{margin:0;break-after:page}.slide:last-child{break-after:auto}.slide:focus{outline:none}}
 
-opensymphony run
-
-# En otra terminal
-opensymphony desktop</code></pre><p class="source">Comandos de la <a href="https://github.com/kumanday/OpenSymphony#installation">documentación de OpenSymphony</a>.</p></div><div><h2>Configuración que revisaremos</h2><p>Acceso a Linear y al repositorio GitHub.</p><p>Arnés autenticado, modelo y permisos.</p><p>Proyecto observado, estados de trabajo y rama de destino.</p><p><code>WORKFLOW.md</code> y <code>config.yaml</code>.</p></div></div><p class="demo">Arrancar el orquestador después de revisar el proyecto y la política de despacho.</p><footer class="footer"><span>Hardcore AI by 30X · Estación 7</span><span>12 / 20</span></footer></section>
-<section class="slide" contenteditable="true" spellcheck="true" aria-label="13. Del alcance completo a las tareas de Linear"><p class="eyebrow">DEMO · PLANIFICACIÓN</p><h1>Del alcance completo a las tareas de Linear</h1><div class="flow"><div>Spec<small>alcance aprobado</small></div><b>→</b><div>Paquete<small>todas las tareas</small></div><b>→</b><div>Revisión<small>cobertura y grafo</small></div><b>→</b><div>Linear<small>IDs y dependencias</small></div></div><table><tr><th>Skill</th><th>Resultado que inspeccionamos</th></tr><tr><td><code>create-implementation-plan</code></td><td>Manifest, hitos y un archivo por tarea; aceptación, contexto y validación.</td></tr><tr><td><code>convert-tasks-to-linear</code></td><td>Validación, dry-run y publicación del paquete revisado.</td></tr><tr><td><code>linear</code></td><td>Consulta y actualización de issues, dependencias y estados.</td></tr></table><p class="demo">Cada requisito del alcance debe corresponder a tareas publicadas o a evidencia de implementación existente.</p><footer class="footer"><span>Hardcore AI by 30X · Estación 7</span><span>13 / 20</span></footer></section>
-<section class="slide" contenteditable="true" spellcheck="true" aria-label="14. Qué recibe el agente"><p class="eyebrow">DEMO · DESPACHO</p><h1>Qué recibe el agente</h1><div class="contract"><b>Tarea</b><span>Objetivo, alcance, criterios de aceptación y dependencias.</span><b>Repositorio</b><span>Workspace, instrucciones, código y comando de validación.</span><b>Contexto</b><span>Decisiones previas y memoria relevante para ese trabajo.</span><b>Agent Workpad</b><span>Plan, avances, hallazgos, pruebas y bloqueos registrados durante la ejecución.</span></div><p>En la app: seleccionar el issue, abrir su ejecución y comprobar el contexto y los primeros eventos.</p><p class="demo">Si la tarea no se despacha, revisar dependencias, estado del issue y configuración antes de reintentar.</p><footer class="footer"><span>Hardcore AI by 30X · Estación 7</span><span>14 / 20</span></footer></section>
-<section class="slide" contenteditable="true" spellcheck="true" aria-label="15. Entrega un cambio que se pueda revisar"><p class="eyebrow">DEMO · REVISIÓN POR AGENTES</p><h1>Entrega un cambio que se pueda revisar</h1><div class="flow"><div>Agente autor<small>diff y pruebas</small></div><b>→</b><div>Agente revisor<small>hallazgos concretos</small></div><b>→</b><div>Corrección<small>nuevo commit</small></div><b>→</b><div>Revisión<small>cambio actualizado</small></div></div><table><tr><th>En el PR preparado</th><th>Qué comprobar</th></tr><tr><td>Ciclos anteriores</td><td>Un hallazgo, la corrección y la verificación posterior.</td></tr><tr><td>Revisión vigente</td><td>Que cubre el commit que se va a integrar.</td></tr><tr><td>Resultado</td><td>Aceptación cubierta, CI y ausencia de hallazgos pendientes que bloqueen el merge.</td></tr></table><p class="demo">La revisión debe corresponder al commit que se va a integrar.</p><footer class="footer"><span>Hardcore AI by 30X · Estación 7</span><span>15 / 20</span></footer></section>
-<section class="slide" contenteditable="true" spellcheck="true" aria-label="16. Integrar el PR y actualizar el trabajo"><p class="eyebrow">DEMO · LANDING</p><h1>Integrar el PR y actualizar el trabajo</h1><div class="flow"><div>PR preparado<small>revisión y CI</small></div><b>→</b><div>Merge<small>rama de destino</small></div><b>→</b><div>Linear<small>estado y enlace</small></div><b>→</b><div>Memoria<small>captura y consulta</small></div></div><div class="columns"><div><h2>En esta demostración</h2><p>Comprobar el commit revisado, hacer merge y verificar el resultado en GitHub.</p><p>Actualizar Linear según el workflow y comprobar la captura de memoria.</p></div><div><h2>Política del proyecto</h2><p>El merge y el cambio de estado se pueden automatizar con condiciones explícitas.</p><p>La intervención humana permite decidir alcance, aceptar riesgos y conservar comprensión del código.</p></div></div><p class="demo">La política del proyecto define las condiciones de merge y de cierre en Linear.</p><footer class="footer"><span>Hardcore AI by 30X · Estación 7</span><span>16 / 20</span></footer></section>
-<section class="slide" contenteditable="true" spellcheck="true" aria-label="17. Dependencias, ejecución y resultado"><p class="eyebrow">DESKTOP · GRAFO DE TAREAS</p><h1>Dependencias, ejecución y resultado</h1><img class="product-shot" src="assets/opensymphony-tareas.png" alt="Grafo de tareas de OpenSymphony con columnas de completadas, actuales y backlog"><p class="caption">Captura de referencia con datos de ejemplo. En vivo: seleccionar una tarea, seguir sus dependencias y abrir ejecución y PR.</p><footer class="footer"><span>Hardcore AI by 30X · Estación 7</span><span>17 / 20</span></footer></section>
-<section class="slide" contenteditable="true" spellcheck="true" aria-label="18. Del Agent Workpad al contexto de otra tarea"><p class="eyebrow">DESKTOP · GRAFO DE CONOCIMIENTO</p><h1>Del Agent Workpad al contexto de otra tarea</h1><div class="memory-layout"><img src="assets/opensymphony-memoria.png" alt="Grafo de conocimiento e inspector de una cápsula de memoria de ejemplo"><div><h2>Durante el trabajo</h2><p>El Agent Workpad conserva decisiones, resultados y asuntos pendientes.</p><h2>Después del cierre</h2><p>La captura conserva conocimiento de la tarea y del PR en cápsulas durables.</p><h2>En la siguiente tarea</h2><p>Consultar memoria relacionada y comprobar sus fuentes antes de usarla como contexto.</p></div></div><p class="caption">Captura de referencia con una cápsula de ejemplo. En vivo: abrir una cápsula real y seguir un enlace a su fuente.</p><footer class="footer"><span>Hardcore AI by 30X · Estación 7</span><span>18 / 20</span></footer></section>
-<section class="slide" contenteditable="true" spellcheck="true" aria-label="19. Localizar símbolos y comprobar el código vigente"><p class="eyebrow">DESKTOP · GRAFO DE CÓDIGO</p><h1>Localizar símbolos y comprobar el código vigente</h1><div class="flow"><div>Archivos<small>repositorio / workspace</small></div><b>→</b><div>Tree-sitter<small>estructura sintáctica</small></div><b>→</b><div>Grafo<small>símbolos y referencias</small></div><b>→</b><div>Contexto<small>fuentes acotadas</small></div></div><div class="columns"><div><h2>En la app</h2><p>Buscar un símbolo, abrir sus relaciones y navegar al archivo correspondiente.</p><p>Comparar con el diff de una ejecución cuando esté disponible.</p></div><div><h2>En el trabajo del agente</h2><p>Usar el índice para encontrar código relevante y comprobar el AST del workspace antes de editar.</p><p>La búsqueda estructural orienta la modificación; las pruebas comprueban su efecto.</p></div></div><p class="source"><a href="https://github.com/kumanday/OpenSymphony/blob/main/docs/code-intelligence.md">Code Intelligence: búsqueda indexada y comprobación del AST</a></p><footer class="footer"><span>Hardcore AI by 30X · Estación 7</span><span>19 / 20</span></footer></section>
-<section class="slide" contenteditable="true" spellcheck="true" aria-label="20. Probar orquestación con el plan de E6"><p class="eyebrow">APLICACIÓN EN EL PROYECTO</p><h1>Probar orquestación con el plan de E6</h1><p class="lead">Usa OpenSymphony para recorrer una tarea de tu proyecto desde el despacho hasta la integración y la memoria.</p><table><tr><th>Con cualquier arnés u orquestador</th><th>Qué conservar</th></tr><tr><td>Despacho</td><td>Tarea identificable, dependencias y condiciones de inicio.</td></tr><tr><td>Contexto</td><td>Instrucciones, código y decisiones relevantes.</td></tr><tr><td>Continuidad</td><td>Notas de trabajo, evidencia y memoria consultable.</td></tr><tr><td>Integración</td><td>Revisión por agentes, validación y política de cierre.</td></tr></table><p>Un orquestador propio se justifica cuando necesitas reglas o integraciones que los existentes no cubren y puedes mantener su operación.</p><p class="source"><a href="https://opensymphony.dev">OpenSymphony</a> · <a href="../estacion6/recursos.md">Recursos de E6 y E7</a> · <a href="preparacion.html">Preparación del plan completo</a></p><footer class="footer"><span>Hardcore AI by 30X · Estación 7</span><span>20 / 20</span></footer></section>
-</main></body></html>
+.slice{display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin-top:18px;border:1px solid #2A2A2A}
+.slice div{padding:14px 14px 16px;border-left:1px solid #2A2A2A;font-size:19px;line-height:1.3;color:#B3B3B3;min-height:150px}
+.slice div:first-child{border-left:0}
+.slice b{display:block;color:white;font-size:21px;margin-bottom:8px}
+.slice .band{grid-column:1/-1;background:#1F2A05;color:#C8E600;font-size:20px;font-weight:700;padding:12px 14px;border-left:0;border-top:1px solid #C8E600;min-height:0}
+.cal td,.cal th{padding:7px 14px;font-size:18px}
+pre.prompt{background:#141414;border:1px solid #2A2A2A;padding:16px 20px;font-size:19px;line-height:1.35;color:#E6E6E6;white-space:pre-wrap;margin:14px 0 0;font-family:Menlo,Consolas,monospace}
+</style></head><body><main class="deck"><section class="slide" contenteditable="true" spellcheck="true" aria-label="1. Del backlog al merge"><nav class="map" aria-label="Mapa conceptual"><span>LLM</span><em>→</em><span>Coding agent</span><em>→</em><span>Arnés</span><em>→</em><span>Loop</span><em>→</em><span>Orquestador</span><em>→</em><span>MCP</span></nav><div class="cover">
+<p class="eyebrow">DEL BACKLOG AL MERGE · ESTACIÓN 7</p>
+<h1>Hoy todos salen con un PR mergeado</h1>
+<p class="lead">Sobre tu repo y tu producto. Teoría corta, laboratorio largo y review en parejas.</p>
+<p class="take">Outcome de hoy: la primera tarea de tu rebanada, implementada con un agente, revisada y mergeada.</p>
+</div><footer class="footer"><span>Hardcore AI by 30X · Estación 7 · APERTURA</span><span>01 / 14</span></footer></section>
+<section class="slide" contenteditable="true" spellcheck="true" aria-label="2. Una rebanada, de punta a punta"><nav class="map" aria-label="Mapa conceptual"><span>LLM</span><em>→</em><span>Coding agent</span><em>→</em><span>Arnés</span><em>→</em><span>Loop</span><em>→</em><span>Orquestador</span><em>→</em><span>MCP</span></nav><p class="eyebrow">EL CAMBIO DE PLAN</p>
+<h1>Una rebanada, de punta a punta</h1>
+<div class="slice">
+<div><b>Spec</b>Un flujo, tres criterios de aceptación</div>
+<div><b>Código</b>Tareas implementadas con agentes</div>
+<div><b>Tests</b>Un E2E y uno de API</div>
+<div><b>Deploy</b>Corriendo fuera de tu máquina</div>
+<div><b>Observable</b>Un dashboard que muestra que funciona</div>
+<div class="band">Tu rebanada: un solo flujo que un usuario completa de principio a fin</div>
+</div>
+<p class="take">En el Demo Day se muestra una rebanada que funciona, no un producto a medias.</p><footer class="footer"><span>Hardcore AI by 30X · Estación 7 · APERTURA</span><span>02 / 14</span></footer></section>
+<section class="slide" contenteditable="true" spellcheck="true" aria-label="3. Tres semanas hasta el Demo Day"><nav class="map" aria-label="Mapa conceptual"><span>LLM</span><em>→</em><span>Coding agent</span><em>→</em><span>Arnés</span><em>→</em><span>Loop</span><em>→</em><span>Orquestador</span><em>→</em><span>MCP</span></nav><p class="eyebrow">EL PLAN HASTA EL 18 DE NOVIEMBRE</p>
+<h1>Cada sesión termina con algo que funciona</h1>
+<table class="cal tight">
+<tr><th style="width:18%">Fecha</th><th style="width:30%">Sesión</th><th>Outcome sobre tu rebanada</th></tr>
+<tr><td>Lun 2 nov</td><td>E7 · Laboratorio</td><td>Plan de tareas y la primera mergeada</td></tr>
+<tr><td>Mié 4 nov</td><td>E8 · Calidad</td><td>Un flujo E2E y un test de API</td></tr>
+<tr><td>Jue 5 nov</td><td>Tutoría</td><td>Segunda tarea mergeada</td></tr>
+<tr><td>Lun 9 nov</td><td>E9 · Despliegue</td><td>Tu rebanada corriendo fuera de tu máquina</td></tr>
+<tr><td>Mié 11 nov</td><td>E10 · Seguridad</td><td>Secretos y dependencias revisados; flujo completo</td></tr>
+<tr><td>Lun 16 nov</td><td>E11 · Observabilidad</td><td>Un dashboard y el video de 3 minutos</td></tr>
+<tr><td>Mié 18 nov</td><td>Demo Day</td><td>Tu rebanada funcionando en vivo</td></tr>
+</table>
+<p class="take">Cada enlace va al roadmap del grupo. Si quedas dos estaciones atrás, te buscamos antes de la siguiente.</p><footer class="footer"><span>Hardcore AI by 30X · Estación 7 · APERTURA</span><span>03 / 14</span></footer></section>
+<section class="slide" contenteditable="true" spellcheck="true" aria-label="4. La ruta de hoy"><nav class="map" aria-label="Mapa conceptual"><span>LLM</span><em>→</em><span>Coding agent</span><em>→</em><span>Arnés</span><em>→</em><span>Loop</span><em>→</em><span>Orquestador</span><em>→</em><span>MCP</span></nav><p class="eyebrow">120 MINUTOS · 85 DE PRÁCTICA</p>
+<h1>La ruta de hoy</h1>
+<table class="modules">
+<tr><th style="width:12%">Min</th><th style="width:34%">Bloque</th><th>Sales con</th></tr>
+<tr><td>0–10</td><td>Dónde estamos</td><td>El plan hasta el Demo Day</td></tr>
+<tr><td>10–40</td><td>Spec mínima y plan</td><td>Spec con nota A o B y de 3 a 6 tareas</td></tr>
+<tr><td>40–50</td><td>Demo en vivo</td><td>Una tarea que pasa por agente, PR, review y merge</td></tr>
+<tr><td>50–95</td><td>Laboratorio</td><td>Tu primer PR abierto</td></tr>
+<tr><td>95–110</td><td>Review cruzado</td><td>PR revisado y mergeado</td></tr>
+<tr><td>110–120</td><td>Cierre</td><td>Enlace en el roadmap y tarea para E8</td></tr>
+</table>
+<p class="take">Si trajiste spec y plan, el bloque de 10 a 40 es tuyo para empezar a implementar.</p><footer class="footer"><span>Hardcore AI by 30X · Estación 7 · APERTURA</span><span>04 / 14</span></footer></section>
+<section class="slide" contenteditable="true" spellcheck="true" aria-label="5. La spec mínima"><nav class="map" aria-label="Mapa conceptual"><span>LLM</span><em>→</em><span>Coding agent</span><em>→</em><span class="on">Arnés</span><em>→</em><span>Loop</span><em>→</em><span>Orquestador</span><em>→</em><span>MCP</span><span class="here" style="border:0;padding:0">ESTÁS AQUÍ</span></nav><p class="eyebrow">VÍA RÁPIDA · UNA PÁGINA</p>
+<h1>La spec mínima de una rebanada</h1>
+<div class="three">
+<div><span class="num">1</span><h2>Problema y usuario</h2><p class="small">Qué le duele a quién. Un solo usuario.</p></div>
+<div><span class="num">2</span><h2>El flujo</h2><p class="small">De 3 a 7 pasos, desde que empieza hasta que obtiene el resultado.</p></div>
+<div><span class="num">3</span><h2>Tres criterios</h2><p class="small">Cada uno se comprueba con un test. Más lo que queda fuera.</p></div>
+</div>
+<p class="take">Plantilla: estacion7/plantillas/spec-minima.md · Evalúala con evaluate-spec hasta A o B.</p><footer class="footer"><span>Hardcore AI by 30X · Estación 7 · SPEC MÍNIMA</span><span>05 / 14</span></footer></section>
+<section class="slide" contenteditable="true" spellcheck="true" aria-label="6. Ejemplo de spec mínima"><nav class="map" aria-label="Mapa conceptual"><span>LLM</span><em>→</em><span>Coding agent</span><em>→</em><span class="on">Arnés</span><em>→</em><span>Loop</span><em>→</em><span>Orquestador</span><em>→</em><span>MCP</span><span class="here" style="border:0;padding:0">ESTÁS AQUÍ</span></nav><p class="eyebrow">EJEMPLO · ENTREVISTA AI</p>
+<h1>«El reclutador crea una campaña y recibe el link»</h1>
+<div class="two">
+<div><h2>Flujo</h2><p class="small">1. Entra al dashboard.<br>2. Crea una campaña con el cargo y tres preguntas.<br>3. La guarda.<br>4. Ve el link para compartir.</p><p class="example">Fuera: login, edición, Telegram, evaluación.</p></div>
+<div><h2>Criterios de aceptación</h2><p class="small">Una campaña válida aparece como «Activa».<br>Sin nombre del cargo, muestra error y no guarda.<br>El link abre una página con el nombre del cargo.</p></div>
+</div>
+<p class="take">Chica, completa y comprobable. Todo lo demás espera a la siguiente rebanada.</p><footer class="footer"><span>Hardcore AI by 30X · Estación 7 · SPEC MÍNIMA</span><span>06 / 14</span></footer></section>
+<section class="slide" contenteditable="true" spellcheck="true" aria-label="7. De la spec al plan"><nav class="map" aria-label="Mapa conceptual"><span>LLM</span><em>→</em><span>Coding agent</span><em>→</em><span class="on">Arnés</span><em>→</em><span>Loop</span><em>→</em><span class="on">Orquestador</span><em>→</em><span>MCP</span><span class="here" style="border:0;padding:0">ESTÁS AQUÍ</span></nav><p class="eyebrow">CREATE-IMPLEMENTATION-PLAN</p>
+<h1>De 3 a 6 tareas, la primera en una hora</h1>
+<div class="graph">
+<div class="node ready"><b>TASK-001</b>Proyecto creado y un test que corre</div><div class="arrow">→</div>
+<div class="node"><b>TASK-002</b>Modelo y guardado de la campaña</div><div class="arrow">→</div>
+<div class="node"><b>TASK-003</b>Formulario con validación</div>
+<div class="node"><b>TASK-004</b>Link para compartir</div><div class="arrow">→</div>
+<div class="node"><b>TASK-005</b>Página pública del link</div><div class="arrow">→</div>
+<div class="node"><b>…</b>Nada más hasta el Demo Day</div>
+</div>
+<p class="take">La primera tarea siempre deja el proyecto andando con un test. Sin eso, no hay dónde verificar nada.</p><footer class="footer"><span>Hardcore AI by 30X · Estación 7 · SPEC MÍNIMA</span><span>07 / 14</span></footer></section>
+<section class="slide" contenteditable="true" spellcheck="true" aria-label="8. Spec y plan"><nav class="map" aria-label="Mapa conceptual"><span>LLM</span><em>→</em><span>Coding agent</span><em>→</em><span class="on">Arnés</span><em>→</em><span>Loop</span><em>→</em><span>Orquestador</span><em>→</em><span>MCP</span><span class="here" style="border:0;padding:0">ESTÁS AQUÍ</span></nav><p class="eyebrow">TU TURNO · 30 MIN</p>
+<h1>Spec mínima y plan</h1>
+<div class="steps">
+<div><b>10 min</b><span>Completa docs/spec-rebanada.md con la plantilla.</span></div>
+<div><b>08 min</b><span>Evalúala con evaluate-spec y corrige el vacío más grave.</span></div>
+<div><b>12 min</b><span>Genera de 3 a 6 tareas con create-implementation-plan.</span></div>
+</div>
+<p class="take">¿Ya lo traías? Empieza ya el laboratorio con tu primera tarea.</p><footer class="footer"><span>Hardcore AI by 30X · Estación 7 · SPEC MÍNIMA</span><span>08 / 14</span></footer></section>
+<section class="slide" contenteditable="true" spellcheck="true" aria-label="9. Una tarea atraviesa el loop"><nav class="map" aria-label="Mapa conceptual"><span>LLM</span><em>→</em><span class="on">Coding agent</span><em>→</em><span>Arnés</span><em>→</em><span class="on">Loop</span><em>→</em><span>Orquestador</span><em>→</em><span>MCP</span><span class="here" style="border:0;padding:0">ESTÁS AQUÍ</span></nav><p class="eyebrow">DEMO EN VIVO · 10 MIN</p>
+<h1>Una tarea, de punta a punta</h1>
+<div class="chain">
+<div class="on"><strong>Tarea</strong><span>Alcance y criterio claros.</span></div><i>→</i>
+<div><strong>Agente</strong><span>Resume el plan y lo implementa.</span></div><i>→</i>
+<div><strong>Tests</strong><span>Corren y pasan. Los corres tú.</span></div><i>→</i>
+<div><strong>PR</strong><span>Diff, criterio y resultado.</span></div><i>→</i>
+<div><strong>Review y merge</strong><span>Una persona aprueba.</span></div>
+</div>
+<p class="take">El agente propone y ejecuta. Tú lees el resumen, corres el test y decides el merge.</p><footer class="footer"><span>Hardcore AI by 30X · Estación 7 · DEMO EN VIVO</span><span>09 / 14</span></footer></section>
+<section class="slide" contenteditable="true" spellcheck="true" aria-label="10. El prompt de implementación"><nav class="map" aria-label="Mapa conceptual"><span>LLM</span><em>→</em><span class="on">Coding agent</span><em>→</em><span>Arnés</span><em>→</em><span>Loop</span><em>→</em><span>Orquestador</span><em>→</em><span>MCP</span><span class="here" style="border:0;padding:0">ESTÁS AQUÍ</span></nav><p class="eyebrow">COPIA ESTE PROMPT · ESTÁ EN LABORATORIO.MD</p>
+<h1>El prompt de implementación</h1>
+<pre class="prompt">Toma únicamente la tarea docs/tasks/001-*.md. Léela completa, junto con
+docs/spec-rebanada.md. Antes de escribir código, resume en 5 líneas el
+alcance y el plan. Después implementa el cambio mínimo, escribe el test
+del criterio de aceptación y córrelo. Entrégame: archivos cambiados,
+comando de test y resultado. No toques nada fuera del alcance de la tarea.</pre>
+<p class="take">Lee el resumen antes de dejarlo avanzar. Si se sale del alcance, detenlo.</p><footer class="footer"><span>Hardcore AI by 30X · Estación 7 · DEMO EN VIVO</span><span>10 / 14</span></footer></section>
+<section class="slide" contenteditable="true" spellcheck="true" aria-label="11. Laboratorio"><nav class="map" aria-label="Mapa conceptual"><span>LLM</span><em>→</em><span class="on">Coding agent</span><em>→</em><span>Arnés</span><em>→</em><span class="on">Loop</span><em>→</em><span>Orquestador</span><em>→</em><span>MCP</span><span class="here" style="border:0;padding:0">ESTÁS AQUÍ</span></nav><p class="eyebrow">TU TURNO · 45 MIN</p>
+<h1>Tu primer PR</h1>
+<div class="steps">
+<div><b>01</b><span>Rama con el ID de la tarea: git checkout -b task-001.</span></div>
+<div><b>02</b><span>Pide la implementación con el prompt.</span></div>
+<div><b>03</b><span>Corre tú el test y revisa el diff.</span></div>
+<div><b>04</b><span>Commit, push y gh pr create, con criterio y resultado en la descripción.</span></div>
+</div>
+<p class="take">¿Trabado más de 10 minutos? Levanta la mano con el paso, el comando y el error exacto.</p><footer class="footer"><span>Hardcore AI by 30X · Estación 7 · LABORATORIO</span><span>11 / 14</span></footer></section>
+<section class="slide" contenteditable="true" spellcheck="true" aria-label="12. Review cruzado"><nav class="map" aria-label="Mapa conceptual"><span>LLM</span><em>→</em><span>Coding agent</span><em>→</em><span>Arnés</span><em>→</em><span class="on">Loop</span><em>→</em><span>Orquestador</span><em>→</em><span>MCP</span><span class="here" style="border:0;padding:0">ESTÁS AQUÍ</span></nav><p class="eyebrow">EN PAREJAS · 15 MIN</p>
+<h1>Revisa el PR de tu pareja</h1>
+<div class="checklist">
+<p><b>01</b>Hace lo que dice la tarea y nada más.</p>
+<p><b>02</b>Hay un test del criterio de aceptación y pasa.</p>
+<p><b>03</b>No hay secretos, claves ni archivos generados de más.</p>
+<p><b>04</b>Entiendes el código lo suficiente para explicarlo.</p>
+</div>
+<p class="take">Deja al menos un comentario. Si todo está bien, aprueba y haz merge.</p><footer class="footer"><span>Hardcore AI by 30X · Estación 7 · LABORATORIO</span><span>12 / 14</span></footer></section>
+<section class="slide" contenteditable="true" spellcheck="true" aria-label="13. Lo que viene: orquestar"><nav class="map" aria-label="Mapa conceptual"><span>LLM</span><em>→</em><span>Coding agent</span><em>→</em><span>Arnés</span><em>→</em><span>Loop</span><em>→</em><span class="on">Orquestador</span><em>→</em><span class="on">MCP</span><span class="here" style="border:0;padding:0">ESTÁS AQUÍ</span></nav><p class="eyebrow">CUANDO EL CICLO MANUAL FUNCIONA</p>
+<h1>Lo que hiciste a mano, un orquestador lo repite</h1>
+<div class="chain">
+<div><strong>Linear</strong><span>Tareas con dependencias.</span></div><i>→</i>
+<div class="on"><strong>Orquestador</strong><span>Toma las tareas listas.</span></div><i>→</i>
+<div><strong>Agentes</strong><span>Un workspace por tarea.</span></div><i>→</i>
+<div><strong>PR y review</strong><span>Automático, con merge humano.</span></div>
+</div>
+<p class="take">Primero el ciclo manual, bien hecho. La orquestación con OpenSymphony es opcional hasta el Demo Day.</p><footer class="footer"><span>Hardcore AI by 30X · Estación 7 · LABORATORIO</span><span>13 / 14</span></footer></section>
+<section class="slide" contenteditable="true" spellcheck="true" aria-label="14. Antes de la estación 8"><nav class="map" aria-label="Mapa conceptual"><span>LLM</span><em>→</em><span>Coding agent</span><em>→</em><span>Arnés</span><em>→</em><span>Loop</span><em>→</em><span>Orquestador</span><em>→</em><span>MCP</span></nav><p class="eyebrow">INCOME DE E8 · MIÉRCOLES 4 DE NOVIEMBRE</p>
+<h1>Llega a E8 con esto</h1>
+<div class="checklist">
+<p><b>01</b>TASK-001 mergeada y su enlace en el roadmap.</p>
+<p><b>02</b>TASK-002 en un PR abierto o mergeado.</p>
+<p><b>03</b>Tu rebanada corriendo en local con un comando documentado en el README.</p>
+<p><b>04</b>El flujo de la rebanada escrito para convertirlo en test E2E.</p>
+</div>
+<p class="source">E8 trabaja sobre tu repo: los tests serán de tu rebanada.</p><footer class="footer"><span>Hardcore AI by 30X · Estación 7 · CIERRE</span><span>14 / 14</span></footer></section></main></body></html>

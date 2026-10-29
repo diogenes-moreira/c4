@@ -1,110 +1,74 @@
-# Antes de estación 7: prepara todas las tareas
+# Antes de la estación 7: tu rebanada lista
 
-**Fecha de clase:** martes 15 de septiembre de 2026, 7 PM Bogotá. **Tiempo orientativo:** 75–105 minutos; depende del tamaño y madurez de tu proyecto. Continúa el paquete iniciado en clase. Entrega antes de la clase en el canal habitual del curso.
+**Clase:** lunes 2 de noviembre, 7 PM Bogotá. **Tiempo estimado:** de 2 a 3 horas durante el fin de semana. **Ayuda:** tutoría del jueves 29 de octubre y el grupo de la cohorte.
 
-Prepara todas las tareas necesarias para implementar el alcance definido de tu proyecto en estaciones 4 y 5. Usa la skill de OpenSymphony `create-implementation-plan` para generar y revisar el paquete completo. En estación 7 el instructor mostrará cómo despachar tareas por dependencias; después podrás aplicar el proceso a tu proyecto. No es necesario implementar todo antes de clase. Si te falta tu diseño, usa los artefactos de EntreVista AI de estación 5; el validador de contraseña es solo una muestra del formato.
+El lunes vamos a implementar y mergear en clase la primera tarea de tu producto. Para eso necesitas llegar con una rebanada definida, evaluada y planificada.
 
-## 1. Revisa el mapa (5 minutos)
+**Una rebanada** es un solo flujo de tu producto que un usuario puede completar de punta a punta. Por ejemplo: «el reclutador crea una campaña y recibe el link para compartir». Es lo que vas a implementar, probar, desplegar y mostrar en el Demo Day. Chica y funcionando vale más que grande y a medias.
 
-El **modelo** interpreta y propone. El **arnés** le permite leer, editar y ejecutar con permisos. Una **skill** aporta un procedimiento reutilizable. Un **hook** reacciona a un evento del arnés. El **orquestador** coordina tareas, dependencias y estados. La **evidencia** permite revisar el resultado.
+## 1. Elige tu rebanada (15 minutos)
 
-Nuestro recorrido será: tarea lista → ejecución → pruebas → revisión → merge autorizado. Un agente puede terminar una ejecución sin haber resuelto la tarea. La revisión de código y las pruebas deben confirmar el resultado.
+Mira tu Vision Board o tu PRD y elige el flujo que mejor muestra el valor de tu producto. Si dudas entre dos, elige el más chico.
 
-## 2. Comprueba tus herramientas (10–15 minutos)
+## 2. Escribe la spec mínima (30 minutos)
 
-Mantén el arnés que ya usas en el curso. Comprueba que puedes abrir el repositorio, hacer una consulta sobre un archivo y ejecutar un comando con tu cuenta autenticada. No necesitas instalar varios arneses.
+Copia la [plantilla de spec mínima](plantillas/spec-minima.md) a tu repo como `docs/spec-rebanada.md` y complétala: problema, usuario, flujo paso a paso, 3 criterios de aceptación, qué queda fuera y decisiones técnicas tomadas.
 
-Si aún no tienes ninguno, usa Claude Code siguiendo la [instalación oficial](https://code.claude.com/docs/en/quickstart). Requiere una cuenta con acceso; instalarlo no concede una suscripción.
+Si ya tienes artefactos de Inception o Construction, enlázalos. Si no los tienes, esta página alcanza.
 
-| Sistema | Instalación de Claude Code |
-|---|---|
-| macOS con Homebrew | `brew install --cask claude-code` |
-| Windows con WinGet | `winget install Anthropic.ClaudeCode` |
-| Linux, macOS sin Homebrew o WSL | Sigue la opción nativa de la guía oficial |
+## 3. Evalúala (20 minutos)
 
-Ejecuta `claude --version`, abre `claude` en tu repo y completa la autenticación. Si ya usas otro arnés, registra su nombre y versión o pantalla de información.
-
-Comprueba Git con `git --version`; si falta, usa [Git para tu sistema](https://git-scm.com/install/). Abre una terminal en tu proyecto y ejecuta `git status`. Debe reconocer el repositorio. No borres cambios existentes para dejarlo limpio.
-
-En **GitHub**, inicia sesión y confirma que puedes acceder al repo donde trabajarás y crear una rama/PR. En **Linear**, entra al espacio del curso y confirma que puedes crear y editar una tarea en el equipo acordado. No hace falta configurar una API ni MCP para esta preparación: la interfaz web sirve.
-
-**Smoke test del arnés:** pide «Lee el README y las instrucciones de este repo; dime el objetivo y el comando de pruebas, citando los archivos. No modifiques nada». Comprueba tú las referencias.
-
-## 3. Genera el plan completo con la skill (35–50 minutos)
-
-La [skill create-implementation-plan](../estacion6/skills/create-implementation-plan/SKILL.md) está incluida en el material. Abre su archivo en tu arnés y pídele que lo lea y siga. No necesitas instalar OpenSymphony para usar estas instrucciones. Si ya tienes la skill instalada, invócala por su nombre.
-
-Trabaja en la raíz de tu proyecto. Proporciona las rutas reales a tu PRD, Inception, Construction, decisiones técnicas y código existente. Envía este prompt:
+En tu repo, pide a Claude Code:
 
 ```text
-Usa la skill create-implementation-plan para preparar TODAS las tareas
-necesarias para implementar el alcance aprobado de mi proyecto.
-Lee primero mis artefactos de estaciones 4 y 5 y el estado actual del repo.
-No limites el plan a una feature ni a una tarea de muestra.
-
-Crea docs/tasks/task-package.yaml, docs/tasks/milestones.md y un archivo
-Markdown por tarea con el frontmatter y las secciones exigidos por la skill.
-Organiza milestones, dependencias, prioridades y criterios de aceptación.
-Incluye integración, pruebas y el trabajo de calidad, seguridad y despliegue
-que el alcance requiera. No agregues funcionalidades fuera del spec.
-
-Comprueba cobertura: cada requisito debe apuntar a tareas o a evidencia
-de que ya está implementado. Registra esto en docs/tasks/cobertura.md.
-Explicita vacíos y decisiones pendientes; no inventes requisitos.
-Si hay incertidumbre, incluye una tarea para resolverla y bloquea las
-dependientes. Respeta la identidad de tareas y waves ya publicadas.
-
-Valida archivos, IDs, referencias, milestones y ausencia de ciclos.
-No implementes ni publiques todavía. Entrega el paquete para mi revisión.
+Lee y sigue estacion6/skills/evaluate-spec/SKILL.md (está en el repo del curso:
+https://github.com/hardcore-ai/c4). Evalúa docs/spec-rebanada.md como una sola
+ola. Escribe docs/spec-review.md con la nota A–D y los vacíos más graves.
+No modifiques la spec.
 ```
 
-El entregable incluye:
+Corrige los vacíos y vuelve a evaluar hasta llegar a **A o B**.
 
-- `docs/tasks/task-package.yaml`: inventario completo y canónico de tareas de la ronda de planificación.
-- `docs/tasks/milestones.md`: objetivos y orden de los hitos.
-- Un Markdown por tarea: alcance, entregables, aceptación, plan de pruebas, contexto y Definition of Ready.
-- `docs/tasks/cobertura.md`: tabla requisito → tareas / evidencia existente / vacío pendiente. Es un complemento de esta actividad, no un campo nuevo del manifest.
+## 4. Deja listo tu entorno (30 minutos)
 
-Revisa que no falte ninguna parte del alcance. Un paquete completo puede contener tareas bloqueadas; solo las que tienen dependencias y decisiones resueltas están listas para ejecutar. Si tu proyecto ya tiene tareas, conserva IDs y evita duplicados.
+- **Repo:** creado en GitHub, clonado en tu máquina y con `docs/spec-rebanada.md` subido.
+- **Claude Code:** instalado y autenticado. Comprueba con `claude --version`, abre `claude` dentro del repo y pídele que te diga qué contiene, sin modificar nada.
+- **Git:** `git status` funciona dentro del repo.
+- **Linear:** puedes entrar al espacio del curso y crear una tarea. No hace falta configurar API ni MCP.
 
-## 4. Revisa cobertura y dependencias (10–15 minutos)
+Si después de 10 minutos un paso de instalación sigue fallando, anota el sistema operativo, el comando y el error exacto, y llévalo a la tutoría del jueves o al grupo.
 
-Pide al agente una segunda pasada de revisión del paquete y comprueba tú sus conclusiones:
+## 5. Genera el plan (30 minutos)
 
-- Todos los requisitos del alcance están representados.
-- Cada archivo del manifest existe y cada ID es único.
-- Milestones, dependencias y padres apuntan a entradas válidas; el grafo no tiene ciclos.
-- Cada tarea tiene aceptación observable y un plan de validación concreto.
-- Hay tareas iniciales ejecutables; los bloqueos restantes están explícitos.
+Pide a Claude Code:
 
-Ejecuta la validación disponible del repo y registra el resultado actual. No inventes pruebas exitosas. Si no existe runner, incluye su preparación como tarea y expresa las dependencias correspondientes. Mantén contexto y decisiones en los archivos existentes de tu proyecto; no reemplaces las reglas de AI-DLC.
+```text
+Lee y sigue estacion6/skills/create-implementation-plan/SKILL.md del repo del
+curso. Prepara el plan SOLO para la rebanada de docs/spec-rebanada.md:
+entre 3 y 6 tareas. La primera debe dejar el proyecto creado con un test
+que corra. Cada tarea con alcance, criterios de aceptación y plan de pruebas.
+No implementes nada todavía.
+```
 
-## 5. Prepara la publicación en Linear (10 minutos)
+Revisa que la primera tarea se pueda hacer en una hora y que las tareas no tengan ciclos. Si puedes, súbelas a Linear; si no, el lunes lo hacemos juntos.
 
-Revisa primero el paquete completo. `create-implementation-plan` genera el plan; la publicación es un paso separado. Con `convert-tasks-to-linear`, si lo tienes disponible, valida el paquete y revisa el dry-run antes de autorizar la publicación en el equipo y proyecto correctos.
+## Llega con esto
 
-También puedes publicarlo por la interfaz web. Mantén correspondencia entre IDs locales e issues reales, milestones y dependencias. No publiques de nuevo tareas ya existentes. Usa un proyecto de preparación sin despacho automático activo: publicar en un proyecto observado por un orquestador puede iniciar trabajo.
+- [ ] `docs/spec-rebanada.md` en tu repo.
+- [ ] `docs/spec-review.md` con nota A o B.
+- [ ] Plan de 3 a 6 tareas en `docs/tasks/` (y en Linear si pudiste).
+- [ ] Claude Code abriendo tu repo.
+- [ ] Una pregunta concreta o un bloqueo escrito.
 
-Si faltan acceso, integración o tiempo de publicación, entrega el paquete completo validado y registra «publicación pendiente». Ese bloqueo no justifica reducirlo a una tarea. La importación puede resolverse en E7.
+## Qué vamos a hacer el lunes
 
-## 6. Entrega (5 minutos)
+| Min | Bloque |
+|---|---|
+| 0–10 | Dónde estamos y el plan hasta el Demo Day |
+| 10–40 | Vía rápida para quien no trajo spec o plan |
+| 40–50 | Demo en vivo: una tarea pasa por agente, PR, review y merge |
+| 50–95 | Laboratorio: implementas tu primera tarea y abres el PR |
+| 95–110 | Review cruzado en parejas y merge |
+| 110–120 | Enlace del PR al roadmap y tarea para E8 |
 
-- Enlace al repo con manifest, milestones y **todos** los archivos de tareas.
-- Tabla de cobertura y resultado de la revisión del grafo.
-- Enlace al proyecto de Linear y correspondencia de IDs, o bloqueo de publicación.
-- Arnés utilizado y comando de validación con resultado real, sin credenciales.
-- Primera tarea ejecutable identificada y una pregunta para clase.
-
-**El plan está preparado** cuando cubre todo el alcance y permite decidir qué ejecutar primero y qué debe esperar. **Necesitas apoyo** si quedan requisitos sin descomponer o decisiones que impiden planificar. Reporta sistema operativo, paso, comando y error exacto después de 10 minutos de bloqueo de instalación.
-
-## Qué haremos en estación 7
-
-Recorreremos las seis secciones del curso de Parlina y veremos una demo del instructor: instalación de OpenSymphony, planificación completa, publicación en Linear, despacho, revisión por agentes y landing de una tarea revisada previamente. Después exploraremos los grafos de tareas, conocimiento y código. Instalar OpenSymphony, EBO, Prime Agent o exo no es requisito de esta preparación.
-
-Ruta de la clase: 50 minutos de conceptos y recorrido por Parlina, 60 de demo en vivo y 10 de preguntas. La implementación de tu proyecto continúa después de clase; no habrá bloques de ejercicios durante la sesión.
-
-## Recursos y profundización opcional
-
-Consulta la [lista de recursos de estaciones 6 y 7](../estacion6/recursos.md). Para la preparación, necesitas especialmente `create-implementation-plan`; `convert-tasks-to-linear` y `linear` corresponden al paso de publicación y operación en Linear.
-
-Lee [persistencia y compaction](https://openai.com/index/how-two-settings-tripled-our-arc-agi-3-scores/) y responde: ¿qué decisiones perderías si reiniciaras tu sesión? Mira [hooks](https://code.claude.com/docs/en/hooks-guide) y propone un evento y una acción verificable. Estas lecturas no añaden instalaciones obligatorias.
+Si llegas con todo listo, usas el bloque de vía rápida para empezar a implementar antes.
