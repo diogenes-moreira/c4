@@ -80,7 +80,7 @@ Cubren E1 a E6. Cada participante trabaja sobre su propio producto; el instructo
 
 ### 3. Roadmap único del grupo
 
-Una tabla compartida, actualizada al cierre de cada sesión. Cada celda marca si el participante logró el **outcome** de esa estación (**Logrado**, **En curso** o **Pendiente**), con el enlace al artefacto que lo demuestra. Versión en línea: [Roadmap Cohorte 4](https://claude.ai/artifact/K4PPpypUojyWeQiu7biaCt) (privada; compartir desde su menú Share).
+Una tabla compartida, actualizada al cierre de cada sesión. Cada celda marca si el participante logró el **outcome** de esa estación (**Logrado**, **En curso** o **Pendiente**), con el enlace al artefacto que lo demuestra. Versión en línea: [Roadmap Cohorte 5](https://claude.ai/artifact/K4PPpypUojyWeQiu7biaCt) (privada; compartir desde su menú Share).
 
 | Participante | E1 Vision Board | E2 PRD | E3 Entorno | E4 Inception | E5 Construction | E6 Tareas | E7 PR | … |
 |---|---|---|---|---|---|---|---|---|
