@@ -80,7 +80,7 @@ Cubren E1 a E6. Cada participante trabaja sobre su propio producto; el instructo
 
 ### 3. Roadmap único del grupo
 
-Una tabla compartida, actualizada al cierre de cada sesión. Cada celda es **Listo**, **En curso** o **Pendiente**, con el enlace al artefacto.
+Una tabla compartida, actualizada al cierre de cada sesión. Cada celda marca si el participante logró el **outcome** de esa estación (**Logrado**, **En curso** o **Pendiente**), con el enlace al artefacto que lo demuestra. Versión en línea: [Roadmap Cohorte 4](https://claude.ai/artifact/K4PPpypUojyWeQiu7biaCt) (privada; compartir desde su menú Share).
 
 | Participante | E1 Vision Board | E2 PRD | E3 Entorno | E4 Inception | E5 Construction | E6 Tareas | E7 PR | … |
 |---|---|---|---|---|---|---|---|---|
@@ -112,11 +112,11 @@ Teoría corta y práctica sobre el producto propio en cada sesión, con la prác
 Un `README.md` en la carpeta de cada estación, siempre con estas secciones y en este orden:
 
 1. **De qué se trata** — dos o tres frases y dónde queda en el mapa.
-2. **Llegas con** — los artefactos de la estación anterior.
+2. **Income** — lo que el estudiante trae: el outcome de la estación anterior.
 3. **Antes de la clase** — instalaciones, accesos y lectura, con tiempo estimado.
 4. **En clase** — ruta por módulos con minutos.
 5. **Tu tarea** — lista numerada y verificable.
-6. **Te vas con** — el entregable, en una línea. Es lo que la siguiente estación pide en «Llegas con».
+6. **Outcome** — el entregable, en una línea y verificable. Es el income de la siguiente estación.
 7. **Material** — slides, guías, repos y skills, con enlaces.
 8. **Refuerzo y dudas** — día del refuerzo y canal.
 
@@ -129,7 +129,7 @@ Los runbooks y guías largas se mantienen, pero se enlazan desde el README.
 | Alta | Dar las dos sesiones de puesta al día y abrir el roadmap del grupo. |
 | Alta | Empezar el empalme entre profesores desde la próxima estación. |
 | Alta | Publicar el material de E3. |
-| Alta | Escribir la tarea de E7 y E10 con su entregable. |
+| Alta | Definir el outcome de E10 y escribir la tarea de E7 y E10. Toda estación debe tener income y outcome. |
 | Media | Normalizar E4, E5, E8, E9 y E11 al formato de README, renombrando «Clase» por «Estación». |
 | Media | Agregar un README a la nivelación 2 con cuándo hacerla. |
 | Baja | Usar EntreVista AI como ejemplo también en E1, E2, E8 y E9, o explicar en cada estación por qué cambia. |

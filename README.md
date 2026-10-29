@@ -8,7 +8,7 @@ Clases **martes y jueves de 7 a 9 PM** (hora Bogotá). Refuerzo de cada estació
 
 1. **Clona el repo:** `gh repo clone hardcore-ai/c4`
 2. **Abre la estación de la semana** en la tabla de abajo. El enlace «Empieza aquí» lleva al archivo que hay que leer primero.
-3. **Haz la tarea antes de la siguiente clase.** Cada estación recibe lo que produjo la anterior: si una tarea queda a medias, la siguiente estación arranca con menos.
+3. **Llega con el income y vete con el outcome.** Cada estación tiene un income (lo que traes) y un outcome (lo que entregas). El outcome de una es el income de la siguiente: si queda a medias, la siguiente arranca con menos.
 4. **Dudas:** el grupo de WhatsApp de la cohorte es el primer recurso. Después, el refuerzo de esa estación.
 
 ## El hilo: un producto que crece estación por estación
@@ -32,7 +32,7 @@ flowchart LR
 
 ## Las estaciones
 
-| # | Fecha | Estación | Llegas con | Te vas con | Empieza aquí |
+| # | Fecha | Estación | Income: llegas con | Outcome: te vas con | Empieza aquí |
 |---|---|---|---|---|---|
 | 1 | Mar 25 ago | Introducción y demostración | Una idea, un problema de tu empresa o un producto del banco | Product Vision Board o Internal Solution Brief, con deep research de validación y de crítica | [README](estacion1/README.md) |
 | 2 | Jue 27 ago | De la idea a la definición | Tu Vision Board | PRD v1 y entorno de coding agents listo | [README](estacion2/README.md) |
@@ -43,7 +43,7 @@ flowchart LR
 | 7 | Mar 15 sep | Del backlog al merge | Paquete de tareas publicado | Al menos una tarea de tu paquete pasada por el ciclo completo: agente, PR, review y merge | [README](estacion7/README.md) · [Preparación](estacion7/preparacion.md) |
 | 8 | Jue 17 sep | Aseguramiento de calidad | Producto implementado y corriendo en local | Skill de testing, 2 flujos E2E, 1 endpoint con tests de API y evaluación del agente | [Guía](estacion8/clase-8-estudiante.md) |
 | 9 | Mar 22 sep | Despliegue (IaC) | Producto testeado | `architecture.md` y módulos Terraform corriendo en LocalStack | [Guía](estacion9/clase-9-estudiante.md) |
-| 10 | Jue 24 sep | Seguridad | Producto desplegado | *Tarea en preparación* | [README](estacion10/README.md) |
+| 10 | Jue 24 sep | Seguridad | Producto desplegado | *Outcome por definir* | [README](estacion10/README.md) |
 | 11 | Mar 29 sep | Observabilidad y preparación del Demo Day | Producto desplegado y asegurado | Stack OpenTelemetry, 3 métricas del agente y un dashboard versionado | [Guía](estacion11/clase-11-estudiante.md) |
 | **12** | **Jue 1 oct** | **Demo Day** | **Tu producto** | **Demo en vivo** | |
 
