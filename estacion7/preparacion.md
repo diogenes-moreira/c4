@@ -22,7 +22,7 @@ En tu repo, pide a Claude Code:
 
 ```text
 Lee y sigue estacion6/skills/evaluate-spec/SKILL.md (está en el repo del curso:
-https://github.com/hardcore-ai/c4). Evalúa docs/spec-rebanada.md como una sola
+https://github.com/diogenes-moreira/c4/tree/rework/estacion7). Evalúa docs/spec-rebanada.md como una sola
 ola. Escribe docs/spec-review.md con la nota A–D y los vacíos más graves.
 No modifiques la spec.
 ```
@@ -43,8 +43,8 @@ Si después de 10 minutos un paso de instalación sigue fallando, anota el siste
 Pide a Claude Code:
 
 ```text
-Lee y sigue estacion6/skills/create-implementation-plan/SKILL.md del repo del
-curso. Prepara el plan SOLO para la rebanada de docs/spec-rebanada.md:
+Lee y sigue estacion6/skills/create-implementation-plan/SKILL.md del mismo
+repo. Prepara el plan SOLO para la rebanada de docs/spec-rebanada.md:
 entre 3 y 6 tareas. La primera debe dejar el proyecto creado con un test
 que corra. Cada tarea con alcance, criterios de aceptación y plan de pruebas.
 No implementes nada todavía.
